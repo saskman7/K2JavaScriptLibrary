@@ -1,0 +1,26 @@
+    .popup.sub-form.animatedintro,
+    .popup.sub-form.animatedexit,
+    .popup.sub-view.animatedintro,
+    .popup.sub-view.animatedexit {
+        transform: translateX(100%);
+        opacity: 0.0;
+    }
+
+    .popup.sub-form, 
+    .popup.sub-view 
+    {
+        border-radius: 0px!important;
+    }
+
+    .popup.sub-form, 
+    .popup.sub-view 
+    {
+        transform: translateX(0%);
+        transition: transform 0.25s ease-out, opacity 0.25s linear;
+    }
+
+    .popup.sub-form.popup.sub-form.animatedexit, 
+    .popup.sub-view.popup.sub-form.animatedexit
+    {
+        transition: transform 0.25s ease-in, opacity 0.25s linear;
+    }
