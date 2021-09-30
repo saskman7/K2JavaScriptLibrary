@@ -1,0 +1,221 @@
+<style>
+    .progressBar_div .invisible {
+        opacity: 0;
+    }
+
+    .progressBar_div .visible {
+        opacity: 1;
+        transition: opacity 0.5s linear;
+    }
+
+    .progressBar_div {
+        font-family: "Segoe UI" !important;
+        width: 100%;
+        white-space: normal !important;
+    }
+
+    .progressBar_div .progressbar {
+        counter-reset: step;
+        margin-left: -40px;
+    }
+
+    .progressBar_div .progressbar li {
+        list-style-type: none;
+        float: left;
+        font-size: 14px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        color: #a8a8a8;
+        font-weight: 500;
+        white-space: normal !important;
+    }
+
+    .progressBar_div .progressbar li:before {
+        width: 40px;
+        height: 40px;
+        content: counter(step);
+        counter-increment: step;
+        line-height: 38px;
+        border: 2px solid #a8a8a8;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: white;
+        font-size: 14px;
+    }
+
+    .progressBar_div .progressbar li:after {
+        width: 100%;
+        height: 2px;
+        content: '';
+        position: absolute;
+        background-color: #a8a8a8;
+        top: 20px;
+        left: -50%;
+        z-index: -1;
+    }
+
+    .progressBar_div .progressbar li:first-child:after {
+        content: none;
+    }
+
+    @keyframes label {
+        0% {
+            color: #a8a8a8;
+        }
+
+        100% {
+            color: #2196f3;
+        }
+    }
+
+    .progressBar_div .progressbar li.preactive {
+        font-weight: 600;
+    }
+
+    .progressBar_div .progressbar li.active {
+        color: #2196f3;
+        animation-name: label;
+        animation-duration: 1s;
+    }
+
+    @keyframes circle {
+        0% {
+            border-color: #a8a8a8;
+            background-color: white;
+            color: #a8a8a8
+        }
+
+        100% {
+            background-color: #2196f3;
+        }
+    }
+
+    .progressBar_div .progressbar li.active:before {
+        background-color: #2196f3;
+        color: white;
+        border-color: #2196f3;
+        animation-name: circle;
+        animation-duration: 1s;
+    }
+
+    .progressBar_div .progressbar li.complete {
+        color: #4fba70
+    }
+
+    .progressBar_div .progressbar li.complete:before {
+        border-color: #4fba70;
+    }
+
+    .progressBar_div .progressbar li.complete + li:after {
+        background-color: #4fba70;
+    }
+</style>
+<script>
+    if (typeof (ProgressBar) == "undefined") ProgressBar = (function () {
+
+        var enableLog = "false";
+
+        function SetProgressBarItemActive(element) {
+            return function () {
+                element.classList.toggle("active");
+            };
+        }
+
+        function StaggeredProgressBarItem (element) {
+                return function () {
+                    element.classList.toggle("invisible"); element.classList.toggle("visible");
+                };
+            }
+
+        function RenderProgressBar(stageDelimitedList, currentStage, containerName, showDebug) {
+
+            enableLog = showDebug.toString().toLowerCase();
+
+            if ((typeof containerName === 'undefined') || (containerName.toString().length == 0)) {
+                WriteLog("Progress Bar - Container Name is empty");
+                return;
+            }
+
+            if ($("div[name='" + containerName + "']").length <= 0) {
+                WriteLog("Progress Bar - Container view [" + containerName + "] could not be found");
+                return;
+            }
+
+            if ((typeof stageDelimitedList === 'undefined') || (stageDelimitedList.toString().length == 0)) {
+                $("div[name='" + containerName + "']").closest("div.row").css("display", "none");
+                WriteLog("Progress Bar - Stage Delimited List is empty");
+                return;
+            }
+
+            if ((typeof currentStage === 'undefined') || (currentStage.toString().length == 0)) {
+                $("div[name='" + containerName + "']").closest("div.row").css("display", "none");
+                WriteLog("Progress Bar - Current Stage is empty");
+                return;
+            }
+
+            var containerElement = document.getElementsByName(containerName.toString())[0];
+            var panelBodyElement = document.getElementsByName(containerName.toString())[0].querySelectorAll(".panel-body")[0];
+
+            containerElement.style.boxShadow = "none";
+            panelBodyElement.style.background = "transparent";
+
+            var progressBarContainer = document.getElementById("progressBarContainer");
+
+            if (stageDelimitedList[stageDelimitedList.length - 1].toString() === ";") {
+                var stageList = stageDelimitedList.toString().substring(0, stageDelimitedList.length - 1).split(";");
+            }
+            else {
+                var stageList = stageDelimitedList.toString().split(";");
+            }
+
+            var currentStageIndex = stageList.indexOf(currentStage.toString()) + 1;
+
+            if (currentStageIndex < 0) {
+                WriteLog("Progress Bar - Current Stage [" + currentStage.toString() + "] not found in Stage List [" + stageDelimitedList.toString() + "]");
+            }
+
+            if (stageList.length > 0) {
+                var delay = 250;
+                var finalStatusDelay = stageList.length * delay;
+
+                for (var i = 0; i < stageList.length; i++) {
+                    var li = document.createElement('li'); li.style.width = 100 / stageList.length + "%";
+                    li.style.zIndex = -1 - i;
+                    li.innerHTML = stageList[i];
+
+                    if ((i + 1) == currentStageIndex && currentStageIndex > 0) {
+                        li.classList.add("preactive");
+                        setTimeout(SetProgressBarItemActive(li), finalStatusDelay);
+                    }
+                    else if (((i + 1) != currentStageIndex && currentStageIndex > 0 && i < currentStageIndex) || (currentStageIndex == 0)) {
+                        li.setAttribute("class", "complete");
+                    }
+
+                    progressBarContainer.appendChild(li);
+                    li.classList.toggle("invisible");
+                    setTimeout(StaggeredProgressBarItem(li), delay * i);
+                }
+            }
+            else {
+                WriteLog("No stage in Stage List [" + stageDelimitedList.toString() + "]");
+            }
+
+            WriteLog("Progress Bar - Rendered Control");
+
+            return;
+        }
+
+        function WriteLog(messageText) {
+            if (enableLog === "true") {
+                console.log(messageText);
+            }
+        }
+
+        return {
+            Render: RenderProgressBar
+        }
+    })();
+</script>
