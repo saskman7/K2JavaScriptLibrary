@@ -1,0 +1,31 @@
+:root {
+    /*Theme Color Variables*/
+    --Primary: #356859;
+    --Primary-Light: #B9E4C9;
+    --Primary-Dark: #37966F;
+    --Primary-Very-Light: rgba(185, 228, 201,.15);
+    --Secondary: #FD5523;
+    --Secondary-Light: #FEAA91;
+    --Secondary-Dark: #E4491A;
+    --On-Primary: #fff; 
+    --On-Primary-Light: #000;
+    --On-Primary-Dark: #000;
+    --On-Secondary: #000;
+    --On-Secondary-Light: #000;
+    --On-Secondary-Dark: #fff;
+    --Background: #FFFBe6;
+    --Surface: #FFFBe6;
+    --Error: #A44354;
+    --Error-Light: #CA4D5D;
+    --On-Background: #000;
+    --On-Surface: #000;
+    --On-Error: #fff;
+    --On-Error-Light: #000;
+    --Compliment: #43727E;
+    --Compliment-Light: #82A8B2;
+    --On-Compliment: #fff;
+    --On-Compliment-Light: #000;
+    --Plain-Label-Color: #152D24;
+        }
+      
+    

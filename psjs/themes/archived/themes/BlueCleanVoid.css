@@ -1,0 +1,120 @@
+.theme-entry .input-control.select-box .input-control-buttons a {
+    height: 2rem!important;
+}
+
+.SFC.SourceCode-Forms-Controls-Web-TextBox.SFE
+
+{
+	border: white;
+	border-radius: 8px
+}
+
+.theme-entry .input-control, .theme-entry .input-control .input-control-body 
+{
+	background-color: #f3f3f3;
+		border-radius: 25px !important;
+	padding: 10px !important;
+	background: white !important
+
+}
+
+
+
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a
+
+{
+	border-style: hidden
+}
+
+.expression-dropdown-container{width:50px;display:inline-block}.grouping-button{display:inline-block;background:#fafbf8;height:18px;line-height:18px;text-decoration:none;color:#343e41;min-width:10px;vertical-align:top;border:solid 0px #dde0db}.changed-grouping{border:solid 0px #dde0db}.available-grouping{border:solid 0px #2196f3;background:#deeffd}span.previewText{color:#00bcd4}#ConditionWidgetPC #ExpressionDiv #ExpressionPanel .panel-body .scroll-wrapper{padding:10px}#ConditionWidgetPC #PreviewDiv #previewWidget .panel-body .scroll-wrapper{padding:10px}
+
+
+ 
+.input-control-m-c {
+	border-color: white ;
+	border-radius: 8px
+
+}
+
+ .theme-entry .input-control.select-box .input-control-m-c {
+	 border-color: white;
+	 border-radius: 8px
+
+ }
+ 
+ 
+.input-control-wrapper
+ 
+ {
+	 	 border-color: white
+
+ }
+ 
+ .input-control select-box dropdown-box watermark
+ {
+	 border-color: white;
+	 border-radius: 8px
+ }
+ 
+ .input-control-buttons styling-right styling-inner-wrapper
+ 
+  {
+	 border-color: white
+ }
+ 
+ .theme-entry .input-control.select-box.dropdown-box .input-control-buttons
+   {
+	 border-color: white
+ }
+ 
+ .theme-entry .input-control.select-box .input-control-buttons
+ 
+ {
+	 border-color: white
+ }
+ 
+ .theme-entry .input-control.text-input .input-control-m-c
+ 
+ {
+	 border-color: white
+ }
+ 
+ .input-control-m-c
+ 
+ {
+	 border-color: white
+ }
+ 
+ .theme-entry a.SourceCode-Forms-Controls-Web-Button, .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled, .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover, .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:focus, .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:active, .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:focus, .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled:hover:active, .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime, .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover, .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:focus, .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:active, .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:focus, .theme-entry a.SourceCode-Forms-Controls-Web-Button.designtime:hover:active, .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview, .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover, .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:focus, .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:active, .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:focus, .theme-entry a.SourceCode-Forms-Controls-Web-Button.preview:hover:active
+ 
+ {
+	 border-radius: 10px
+ }
+ 
+ .panel 
+ {
+ 
+ -webkit-box-shadow : none !important;
+ -moz-box-shadow : none !important;
+ box-shadow : none !important 
+ 
+ }
+ 
+.runtime-form .theme-entry
+ 
+ {
+	border-radius: 25px !important;
+	padding: 10px !important;
+	background: white !important
+
+ }
+ 
+ .theme-entry .form
+ 
+ {
+    border-radius: 25px !important;
+	padding: 10px !important;
+	background: white !important 
+	 
+	 
+ }

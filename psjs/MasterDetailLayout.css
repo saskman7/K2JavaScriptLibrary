@@ -1,0 +1,159 @@
+    /*Make the form a 100% height layout */
+    .runtime-content,
+    .runtime-form.theme-entry,
+    .runtime-form>.form,
+    .runtime-form>.form>.row {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    /*Specific 2 column layout */
+    .runtime-form>.form>.row {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    /*All Columns */
+    .runtime-form>.form>.row>* {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    /*All views and controls in the dropzone layout*/
+    .runtime-form>.form>.row>.view,
+    .runtime-form>.form>.row>.view>.innerpanel {
+        display: flex;
+        position: relative;
+        flex-grow: 1;
+    }
+
+    /*All views and controls in the dropzone layout*/
+    .runtime-form>.form>.row>.formcontrol,
+    .runtime-form>.form>.row>.formcontrol>.innerpanel {
+        display: flex;
+        position: relative;
+        flex-grow: 1;
+    }
+
+    /*hide everything after the content control*/
+    .runtime-form>.form>.row>.view,
+    .runtime-form>.form>.row>.formcontrol {
+        display: none;
+        pointer-events: none;
+        opacity: 0;
+    }
+    
+    .runtime-form>.form>.row>*:nth-child(1) {
+        display: flex!important;
+        flex-grow: 0;
+        pointer-events: all;
+        opacity: 1;
+    }
+    
+    .runtime-form>.form>.row>*:nth-child(2) {
+        display: flex!important;
+        flex-grow: 1;
+        pointer-events: all;
+        opacity: 1;
+    }
+    
+    [name~='scpsapimenubutton'],
+    [alt~='scpsapimenubutton'] {
+        display: none!important;
+    }
+    
+    @media only screen and (max-width: 450px) {
+        .runtime-form>.form>.row>*:nth-child(1) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            width: auto!important;
+            height: auto!important;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0;
+        }
+        .runtime-form>.form>.row>*:nth-child(1).show {
+            pointer-events: all;
+            opacity: 1;
+        }
+        .runtime-form>.form>.row>*:nth-child(2),
+        .runtime-form>.form>.row>*:nth-child(2)>.innerpanel {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            width: auto!important;
+        }
+        [name~='scpsapimenubutton'],
+        [alt~='scpsapimenubutton'] {
+            display: inline-block!important;
+            ;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {
+        .theme-entry .form>.row>.view>*,
+        .theme-entry .form>.row>.formcontrol>*,
+        .mobile .theme-entry .form>.row>.formcontrol>* {
+            margin-left: 0rem!important;
+            /*override core SF styles*/
+            margin-right: 0rem!important;
+            /*override core SF styles*/
+        }
+        .mobile .theme-entry .form>.row>.view .innerpanel {
+            /*override core SF styles*/
+            margin-bottom: 0rem!important;
+        }
+        .mobile .theme-entry .form .row .view {
+            width: 100%!important;
+        }
+        .mobile .theme-entry .SourceCode-Forms-Controls-Web-Label,
+        .mobile .theme-entry .form-field .form-field-label {
+            /*override core SF styles*/
+            line-height: normal;
+        }
+    }
+
+    #animatedmenu_top,
+    #animatedmenu_bottom {
+        transition: transform 0.25s;
+    }
+    
+    #animatedmenu_top {
+        /*18+(26/2)*/
+        transform-origin: 50% 49px;
+    }
+    
+    #animatedmenu_bottom {
+        /*200+(26/2)*/
+        transform-origin: 50% 213px;
+    }
+    
+    #animatedmenu_middle {
+        transition: opacity 0.25s linear;
+    }
+    
+    .icon-container.selected #animatedmenu_middle {
+        opacity: 0;
+    }
+    
+    .icon-container.selected #animatedmenu_top {
+        /*distance to middle 128 - 36 - (26/2)*/
+        transform: translate(0px, 82px) rotate(45deg) scaleX(1.2);
+        /*transform: rotate(45deg);*/
+    }
+    
+    .icon-container.selected #animatedmenu_bottom {
+        /*distance to middle 128 - 36 - (26/2)*/
+        transform: translate(0px, -82px) rotate(-45deg) scaleX(1.2);
+        ;
+    }

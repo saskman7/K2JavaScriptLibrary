@@ -1,0 +1,460 @@
+:root {
+    --Immersion-True: var(--Primary-Dark);
+    --Immersion-False: var(--Error);
+}
+
+/* views */
+
+.sbm4k2 .theme-entry .grid-body {
+    /* border: 2px solid;*/
+     background-color: var(--View-Background-Color);
+     border-color: var(--View-Header-Border-Color);
+     border-radius: 5px;
+ }
+
+.sbm4k2 tr.edit-template-row div,
+.sbm4k2 tr.edit-template-row td,
+.sbm4k2 .theme-entry tr.edit-template-row .input-control textarea,
+.sbm4k2 .theme-entry tr.edit-template-row input[type=text],
+.sbm4k2 .theme-entry tr.edit-template-row .input-control.watermark a.input-control span,
+.sbm4k2 .theme-entry tr.edit-template-row .input-control.select-box .input-control-watermark {
+    padding: 0px;
+    font-size: 1.4rem;
+    font-family: var(--Main-Font-Family);
+}
+
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper>span {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table>tbody>tr>td {
+    vertical-align: middle
+}
+
+.sbm4k2 .theme-entry .double.toolbars .toolbar:first-child .toolbar-wrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .grid.with-header .grid-toolbars .toolbar-wrapper {
+    border: none;
+}
+
+.sbm4k2 .grid-header {
+    border: none;
+	background-color: var(--SB-View-Header-Background-Color, var(--Panel-HeaderBar-Background-Color));
+}
+
+.theme-entry .panel>.panel-body {
+    background-color: transparent;
+}
+.sbm4k2 .panel-header-wrapper .panel-header-text,
+.sbm4k2 .grid-header-wrapper .grid-header-text {
+    border-bottom: none;
+    padding: 0px;
+}
+
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text>span,
+.sbm4k2.theme-entry .panel-header-wrapper .panel-header-text>span {
+    font-family: var(--Main-Font-Family-2);
+    margin-left: 10px;
+    font-weight: 300;
+    color: var(--View-Header-Text-Color);
+}
+
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text>span,
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text {
+    color: var(--SB-View-Header-Text-Color, var(--Panel-HeaderBar-Text-Color));
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.sbm4k2.theme-entry .grid-header-wrapper .panel-header-text>span {
+    color: var(--SB-View-Header-Text-Color, var(--Panel-HeaderBar-Text-Color));
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/*.sbm4k2.theme-entry a:hover {
+    background-color: transparent;
+}*/
+
+.sbm4k2 .grid .grid-column-headers,
+.sbm4k2.theme-entry .panel-header-wrapper {
+    background-color: var(--SB-View-Header-Background-Color, var(--Panel-HeaderBar-Background-Color));
+}
+
+.sbm4k2 .theme-entry .grid-content-table tbody tr.highlighted>td {
+    border: none;
+}
+
+.sbm4k2 .grid .grid-column-headers div {
+    color: var(--List-Column-Header-Background-Color);
+    font-family: var(--Main-Font-Family-2);
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: none;
+}
+
+.sbm4k2 .runtime-content .theme-entry .grid .grid-content-cell.numeric .grid-content-cell-wrapper {
+    text-align: center;
+}
+
+.sbm4k2 .grid-header-wrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .toolbars.single .toolbar .toolbar-wrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .toolbar {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .panel-header,
+.sbm4k2 .theme-entry .panel-header div {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .grid.with-header .grid-toolbars {
+    background-color: transparent;
+}
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td
+/*.sbm4k2 .theme-entry .grid table.grid-content-table>tbody>tr:not(.edit-template-row):nth-child(odd)*/ {
+    background-color: var(--List-Row-Background-Color-Odd-Zebra);
+}
+
+.sbm4k2 .grid .grid-body-content-wrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even):not(.action-row) td {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table td.action-row a.action-row {
+    background-color: transparent;
+}
+
+/*.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row):hover>td,*/
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.highlighted):hover>td,
+/*.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover>td span,*/
+/*.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td span,*/
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:not(.edit-template-row):hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover td {
+    background-color: var(--List-Item-Selected-Background-Color);
+    color: var(--List-Item-Selected-Text-Color-2);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row).selected>td,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected>td span,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected:not(.edit-template-row):hover {
+    background-color: var(--List-Row-Selected-Background-Color);
+    color: var(--List-Row-Selected-Text-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected>td span,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td span {
+    font-weight: bold;
+}
+
+.sbm4k2 .view .innerpanel>.grid,
+.sbm4k2 .view .innerpanel>.panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.sbm4k2 div.row {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* list view pager */
+
+.sbm4k2 .theme-entry .grid-footer div.toolbar {
+    white-space: nowrap;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.sbm4k2 .theme-entry .grid-footer .toolbars.single .toolbar .toolbar-wrapper {
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+@media screen and (max-width: 640px) {
+    .sbm4k2 .theme-entry .grid-footer .toolbars.single .toolbar .toolbar-wrapper {
+        text-align: center;
+    }
+}
+.sbm4k2 .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-first,
+.sbm4k2 .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-left,
+.sbm4k2 .theme-entry .grid .grid-footer .toolbars a.toolbar-button.paging-right,
+.sbm4k2 .theme-entry .grid-footer .grid-paging-control {
+    position: unset;
+    right: unset;
+    float: unset;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sbm4k2 .theme-entry .grid .grid-footer .toolbars a.toolbar-button:hover {
+    background-color: var(--Toolbar-Button-Hover-Background-Color);
+    border: 1.5px var(--Toolbar-Border-Color) solid;
+    color: var(--Toolbar-Button-Text-Color);
+    border-radius: 15px;
+}
+
+.sbm4k2 .theme-entry .grid .grid-footer .toolbars a.toolbar-button.disabled:hover {
+    background-color: transparent;
+    border: 1px transparent solid;
+    border-radius: 15px;
+}
+.sbm4k2 .theme-entry .grid .grid-footer .input-control.text-input .input-control-m-c {
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.sbm4k2 .theme-entry .grid .grid-paging-control .input-control {
+    border-bottom: 2px var(--Input-Hover-Border-Color) solid;
+}
+.sbm4k2 .theme-entry .grid-footer .grid-paging-control .text-input.input-control input {
+    font-family: inherit;
+    font-size: var(--Main-Text-Size);
+    top: -1px;
+}
+.sbm4k2 .theme-entry .grid-footer .grid-paging-control .grid-paging-control-text {
+    display: unset;
+}
+/*End list view pager*/
+
+/* replace true / false on grid columns with icons */
+
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='true']>span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='false']>span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover .grid-content-cell-wrapper[title='true']>span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover .grid-content-cell-wrapper[title='false']>span,
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='true']>span,
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='false']>span {
+    color: transparent !important;
+}
+
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='true']>span:before,
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='false']>span:before {
+    font-family: var(--SB-Toolbar-Icon-font, "Font Awesome 5 Free");
+    font-weight: 400;
+    height: 100%;
+    position: relative;
+    font-size: var(--SB-Toolbar-Icon-Size, 1.5rem);
+    top: 2px;
+    text-align: center;
+}
+
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='true']>span:before {
+    content: var(--SB-True-Icon, "\f058");
+    color: var(--SB-True-Icon-Color, var(--Primary-Button-Background-Color));
+}
+
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='false']>span:before {
+    content: var(--SB-False-Icon,"\f057");
+    color: var(--SB-False-Icon-Color, var(--Destructive-Button-Background-Color));
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='true']>span:before,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='false']>span:before {
+    color: white;
+}
+/*End Replace Icons*/
+
+/*Hover & Editable row behavior added 06-03-2020*/
+
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.edit-template-row:hover, 
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.highlighted:not(.selected):hover, 
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.highlighted:nth-child(odd):hover, 
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.highlighted:not(.selected):nth-child(even):hover, 
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.edit-template-row, 
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr.edit-template-row:nth-child(odd) td {
+    background-color: var(--List-Row-Hover-Background-Color/*--List-Background-Color)*/);
+}
+
+/*Control colors*/
+
+.theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode input[type=text], 
+.theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark, 
+.theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .input-control-watermark, 
+.theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .SourceCode-Forms-Controls-Web-TextBox, .theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .input-control .input-control-m-c, .theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .input-control .input-control-content, .theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .input-control.select-box, 
+.theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .input-control-buttons, 
+.theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .input-control textarea,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected>td .edit-mode .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor span, .theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td .edit-mode .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor span, .theme-entry .grid table.grid-content-table tr:hover>td .edit-mode .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor span,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td .edit-mode .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor span {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .SFC.SourceCode-Forms-Controls-Web-TextBox:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .SFC .SourceCode-Forms-Controls-Web-ControlPack-ListBox:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control.text-input .input-control-m-c:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode div.input-control.datepicker:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode div.input-control-buttons:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode div.input-control.select-box:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control.select-box .input-control-body:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control.select-box .input-control:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .SourceCode-Forms-Controls-Web-ControlPack-ListBox:hover {
+    background-color: transparent;
+}
+
+.theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .SourceCode-Forms-Controls-Web-TextBox.readonly,
+.theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control-watermark {
+    color: var(--List-Row-Hover-Background-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control.select-box input[type=text],
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode input[type=text],
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control-watermark,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control.watermark a.input-control span,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode span,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control textarea,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode.input-control.watermark a.input-control span {
+    color:var(--List-Row-Selected-Text-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode input.readonly,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode input.readonly,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control textarea.readonly,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control textarea[readonly="readonly"],
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode .input-control textarea[readonly="readonly"] {
+    color: var(--List-Row-Hover-Background-Color);
+    background-color: var(--List-Row-Background-Color-Odd-Zebra);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .reToolbarWrapper,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .reLeftVerticalSide,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .control-table-row {
+    background-color: white;
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control-buttons,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control.calendar-control .input-control-wrapper,
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row .grid-content-cell.edit-mode .input-control.text-input .input-control-m-c {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table .edit-template-row:hover .grid-content-cell.edit-mode input.readonly {
+    background-color: var(--List-Row-Background-Color-Odd-Zebra) !important;
+}
+
+/*Grid Header*/
+
+.sbm4k2.theme-entry .panel-header-wrapper {
+    background-color: var(--View-Header-Background-Color);
+    color: var(--View-Header-Text-Color);
+}
+
+.sbm4k2.theme-entry .panel-header-wrapper .panel-header-text {
+    background-color: var(--View-Header-Background-Color);
+}
+
+.sbm4k2.theme-entry .grid-header-wrapper {
+    border-bottom: none;
+}
+
+.sbm4k2 .theme-entry .Grid-Layout>.editor-cell.lastcellinrow {
+    padding-bottom: 30px;
+}
+
+/*Mobile List Views*/
+
+@media screen and (max-width: 640px) {
+    .mobile .theme-entry .sbm4k2 li {
+        font-size: 1.3rem;
+    }
+    .mobile .theme-entry .sbm4k2 .panel-body-wrapper>div>table>tbody>tr {
+        display: initial!important;
+        width: initial!important;
+    }
+    .mobile .theme-entry .sbm4k2 .panel-body-wrapper>div>table>tbody>tr>td {
+        display: initial!important;
+        width: initial!important;
+    }
+    .mobile .theme-entry .sbm4k2 .editor-cell {
+        padding-left: 1px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .sbm4k2 .runtime-content .panel table,
+    .sbm4k2 .runtime-content .panel tr,
+    .sbm4k2 .runtime-content .panel td {
+        overflow-x: auto!important;
+        display: block;
+        width: auto!important;
+    }
+    .sbm4k2 .runtime-content .filterContainer,
+    .sbm4k2 .runtime-content .grid-toolbars {
+        /*overflow-x: none;
+        display: block;
+        
+        width: auto;*/
+        display: none;
+    }
+    .sbm4k2 .runtime-content .theme-entry h1,
+    .sbm4k2 .runtime-content .theme-entry h2,
+    .sbm4k2 .runtime-content .theme-entry h3,
+    .sbm4k2 .runtime-content .theme-entry h4 {
+        /* display: block; */
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    .sbm4k2 .runtime-content .panel-header-text,
+    .sbm4k2 .runtime-content .grid-header-text,
+    .sbm4k2.theme-entry .grid-header-wrapper .grid-header-text>span,
+    .sbm4k2.theme-entry .panel-header-wrapper .panel-header-text>span {
+        display: block;
+        text-align: center;
+        white-space: normal;
+    }
+    .sbm4k2 .runtime-content .theme-entry span.SourceCode-Forms-Controls-Web-Label,
+    .sbm4k2 .runtime-content .theme-entry .formcontrol div.innerpanel {
+        text-align: center;
+        width: 100%;
+    }
+    .sbm4k2 .runtime-content .theme-entry .SFC h4.SourceCode-Forms-Controls-Web-Label {
+        text-align: center;
+    }
+    .sbm4k2 .runtime-content .theme-entry .grid-column-headers {
+        display: none;
+    }
+    .sbm4k2 .runtime-content .theme-entry .grid-body table,
+    .sbm4k2 .runtime-content .theme-entry .grid-body tbody,
+    .sbm4k2 .runtime-content .theme-entry .grid-body tr,
+    .sbm4k2 .runtime-content .theme-entry .grid-body td {
+        overflow-x: auto!important;
+        display: block!important;
+        width: auto!important;
+        text-align: center;
+    }
+    .sbm4k2 .runtime-content .theme-entry .grid .grid-content-cell-wrapper,
+    .sbm4k2 .runtime-content .theme-entry .grid .grid-content-cell.numeric .grid-content-cell-wrapper {
+        text-align: center;
+    }
+    .sbm4k2 .theme-entry div.input-control.select-box {
+        width: calc(100% - 2px)!important;
+    }
+    .sbm4k2 .theme-entry .file-wrapper {
+        /* margin-bottom: 10px;
+        margin-top: 10px; */
+        width: calc(100% - 32px);
+    }
+}

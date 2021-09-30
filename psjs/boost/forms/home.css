@@ -1,0 +1,94 @@
+/* ###  TILE CARD TEMPLATE  ###
+<div class='tile-card'>
+    <div class='image'>{{Logo}}</div>
+    <div class='dashboardIcon'>{{DashboardIcon}}</div>
+    <div class='title'>{{Title}}</div>
+    <div class='description'>{{Description}}</div>
+</div>
+*/
+
+/* ###  TILE CARD BORDERS  ### */
+
+[name~='fancylist'].grid tr.selected .tile-card {
+    border-color: rgb(255, 69, 0);
+}
+
+[name~='fancylist'].grid tr:hover:not(.selected) .tile-card {
+    border-color: rgba(89, 85, 85, 0.8);
+}
+
+.theme-entry [name~='fancylist'].grid .grid-body-content,
+.theme-entry [name~='fancylist'].grid .grid-body-content-wrapper {
+    background-color: transparent;
+}
+
+/* ###  TILE CARD STYLING  ### */
+.tile-card {
+    width: 200px;
+    height: 230px;
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    background-color: rgba(130, 167, 204, 0.8);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: solid 3px transparent;
+    overflow: hidden;
+    pointer-events: none;
+    transform: scale(1);
+    transition: transform 0.15s, border-color 0.15s linear;
+    align-content: flex-start;
+    padding: 10px !important;
+    margin: 10px !important;
+}
+
+.tile-card .image {
+    flex: 2;
+    /*flex-grow: 1;*/
+    /*flex: 0 0 100%;*/
+    width: 150px !important;
+    height: 100px !important;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.tile-card .title {
+    font-weight: bold;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 12pt;
+    padding-top: 15px;
+    flex: 0 0 100%;
+    height: 40px;
+    color: #343e41;
+}
+
+.tile-card .description {
+    flex: 2;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 10pt;
+    flex: 0 0 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #343e41;
+}
+
+.tile-card .dashboardIcon {
+    flex: 1;
+    width: 50px;
+    text-align: center;
+    cursor: pointer !important;
+    pointer-events: all !important;
+}
+
+.tile-card .image img.fileImage {
+    border: 0px;
+    padding: 0px;
+    max-height: 100px;
+    max-width: 100px;
+    margin: 0px;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: none;
+}

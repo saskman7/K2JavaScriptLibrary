@@ -1,0 +1,79 @@
+/* ###  TILE CARD TEMPLATE  ###
+<div class='tile-card.active'>
+    <div class='image'>{{Logo}}</div>
+    <div class='title'>{{Title}}</div>
+</div>
+*/
+
+/* ###  TILE CARD BORDERS  ### */
+
+[name~='fancylist'].grid tr.selected .tile-card {
+    border-color: rgb(255, 69, 0);
+}
+
+[name~='fancylist'].grid .grid-column-headers {
+    display: none;
+}
+
+[name~='fancylist'].grid tr.selected .tile-card {
+    border-color: rgb(255, 69, 0);
+}
+
+.theme-entry [name~='fancylist'].grid .grid-body-content,
+.theme-entry [name~='fancylist'].grid .grid-body-content-wrapper {
+    background-color: transparent;
+}
+
+/* ###  TILE CARD STYLING  ### */
+.tile-card {
+    width: 120px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: solid 3px transparent;
+    overflow: hidden;
+    pointer-events: none;
+    transform: scale(1);
+    transition: transform 0.15s, border-color 0.15s linear;
+    align-content: flex-start;
+    padding: 10px !important;
+    margin: 10px !important;
+}
+
+.tile-card-active {
+    background-color: rgba(122, 214, 122, 0.8);
+}
+
+.tile-card-disabled {
+    background-color: rgba(239, 148, 148, 0.8);
+}
+
+.tile-card .image {
+    flex: 2;
+    width: 120px !important;
+    height: 100px !important;
+    text-align: center;
+}
+
+.tile-card .title {
+    font-weight: bold;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 10pt;
+    flex: 0 0 100%;
+    height: 40px;
+    color: #343e41;
+}
+
+.tile-card .image img.fileImage {
+    border: 0px;
+    padding: 0px;
+    max-height: 100px;
+    max-width: 100px;
+    margin: 0px;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: none;
+}

@@ -1,0 +1,118 @@
+    /*Make the form a 100% height layout */
+    .runtime-content,
+    .runtime-form.theme-entry,
+    .runtime-form>.form,
+    .runtime-form>.form>.row {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    /*Specific 2 column layout */
+    .runtime-form>.form>.row {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    /*All Columns */
+    .runtime-form>.form>.row>* {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    /*All views and controls in the dropzone layout*/
+    .runtime-form>.form>.row>.view,
+    .runtime-form>.form>.row>.view>.innerpanel, 
+    .runtime-form>.form>.row>.formcontrol,
+    .runtime-form>.form>.row>.formcontrol>.innerpanel  {
+        display: flex;
+        position: relative;
+    }
+
+    .runtime-form>.form>.row>.view, 
+    .runtime-form>.form>.row>.formcontrol{
+        flex-grow: 0;
+    }
+
+    .runtime-form>.form>.row>.view>.innerpanel, 
+    .runtime-form>.form>.row>.formcontrol>.innerpanel{
+        flex-grow: 1;
+    }
+
+    form {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .runtime-form {
+        opacity: 0.0;
+    }
+
+    .runtime-form.wizard-initialized {
+        opacity: 1.0;
+        transition: opacity 0.5s linear;
+    }
+
+    .runtime-form>.form>.row>.view {
+        margin: 0px auto !important;
+        /*override the margin added by the form designer*/
+    }
+
+    .runtime-form>.form>.row>.view>.innerpanel>.panel>.panel-body,
+    .runtime-form>.form>.row>.view>.innerpanel>.panel>.panel-body>.panel-body-m,
+    .runtime-form>.form>.row>.view>.innerpanel>.panel>.panel-body>.panel-body-m>.panel-body-m-c,
+    .runtime-form>.form>.row>.view>.innerpanel>.panel>.panel-body>.panel-body-m>.panel-body-m-c>.panel-body-wrapper,
+    .runtime-form>.form>.row>.view>.innerpanel>.panel>.panel-body>.panel-body-m>.panel-body-m-c>.panel-body-wrapper>div {
+        display: flex;
+    }
+
+    .runtime-form>.form>.row>.view>.innerpanel>.panel,
+    .runtime-form>.form>.row>.view>.innerpanel>.panel>.panel-body>.panel-body-m>.panel-body-m-c>.panel-body-wrapper>div>.SourceCode-Forms-Controls-Web-Table {
+        height: 100%;
+    }
+
+    .runtime-form>.form>.row>.view>.innerpanel>.panel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .runtime-form>.form>.row>.view>.innerpanel>.panel>.panel-body {
+        flex-grow: 1;
+    }
+
+    .runtime-form>.form>.row {
+
+        transform: translateX(0%);
+    }
+
+    .runtime-form>.form>.row.wizard-step-initialized {
+        transition: transform 0.25s ease-in-out, opacity 0.25s linear;
+    }
+
+    .runtime-form>.form>.row {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .runtime-form>.form>.row.left {
+        transform: translateX(-100%);
+        opacity: 0.0;
+    }
+
+    .runtime-form>.form>.row.right {
+        transform: translateX(100%);
+        opacity: 0.0;
+    }
+
+    .runtime-form>.form>.row.wizard-step-initialized {
+        opacity: 1;
+        pointer-events: all;
+    }

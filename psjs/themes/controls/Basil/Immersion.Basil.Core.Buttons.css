@@ -1,0 +1,72 @@
+/*Global Butons*/
+.theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.sbm4k2 .SFC .SourceCode-Forms-Controls-Web-Button,
+.sbm4k2.theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button {
+    font-family: var(--Main-Font-Family-2);
+    font-weight: 700;
+    font-size: 1.5rem; 
+    text-transform: uppercase;
+    background-color: var(--Button-Background-Color);
+    border: 3px var(--Button-Border-Color) solid;
+    border-radius: var(--Button-Border-Radius);
+    color: var(--Button-Text-Color);
+    margin: 10px 7px;
+    min-width: 100px;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    animation: none;
+}
+
+/*Main Action*/
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary, 
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary.designtime, 
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary.preview {
+    background-color: var(--Primary-Button-Background-Color);
+    border-color: var(--Primary-Button-Text-Color);
+    color: var(--Primary-Button-Text-Color);
+}
+
+/*Quiet Buttons*/
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet, 
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.designtime, 
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet.preview {
+    background-color: var(--Quiet-Button-Background-Color);
+    border-color: var(--Quiet-Button-Border-Color);
+    color: var(--Quiet-Button-Text-Color);
+}
+
+/*Destructive buttons*/
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive, 
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.designtime, 
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive.preview {
+    background-color: var(--Destructive-Button-Background-Color);
+    border-color: var(--Destructive-Button-Border-Color);
+    color: var(--Destructive-Button-Border-Color);
+}
+
+/*Hover of buttons*/
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.sbm4k2 .SFC a.SourceCode-Forms-Controls-Web-Button:hover,
+.sbm4k2.theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus, 
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:focus {
+    background-color: var(--Button-Hover-Background-Color);
+    border-color: var(--Button-Hover-Border-Color);
+    color: var(--Button-Hover-Border-Color);
+}
+
+/*focus*/
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button:focus, 
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover:focus {
+    background-color: var(--Primary-Button-Background-Color) !important;
+    border-color: var(--Primary-Button-Text-Color) !important;
+    color: var(--Primary-Button-Text-Color) !important;
+}

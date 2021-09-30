@@ -1,0 +1,30 @@
+:root {
+    /*Theme Color Variables*/
+    --Primary:#00a346;
+    --Primary-Light: #A9CED5;
+    --Primary-Dark: #015093;
+    --Primary-Very-Light: #e4f3fc;
+    --Secondary: rgba(39, 133, 150, 0.2);
+    --Secondary-Light: #D4E6EA;
+    --Secondary-Dark: #cac2d5;
+    --On-Primary: #fff;
+    --On-Primary-Light: rgb(39, 133, 150);
+    --On-Primary-Dark: #fff;
+    --On-Secondary: #f5f5f5;
+    --On-Secondary-Light: #000;
+    --On-Secondary-Dark: #999;
+    --Background: #fcfcfd;
+    --Surface: #fff;
+    --Error: red;
+    --Error-Light: coral;
+    --On-Background: rgb(78, 87, 88);
+    --On-Surface: #015093;
+    --On-Error: white;
+    --On-Error-Light: #fff;
+    --Compliment: #81AF42;
+    --Compliment-Light: #45AA48;
+    --On-Compliment: #fff;
+    --On-Compliment-Light: #fff;
+    --Plain-Label-Color: rgb(78, 87, 88);
+ 
+}

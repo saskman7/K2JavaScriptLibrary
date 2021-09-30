@@ -1,0 +1,20 @@
+.theme-entry, .theme-entry div, .theme-entry span, .theme-entry td, .theme-entry li, .theme-entry p, .theme-entry textarea, .theme-entry input[type='text'], .theme-entry input.text, .theme-entry select, .theme-entry option {
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+span[name^="L-"]{
+	font-size: 11px !important;
+	color: #21417f !important;
+	font-weight: bold !important;
+}
+/*Label Formatting*/
+.theme-entry .view .innerpanel > .grid, .theme-entry .view .innerpanel > .panel, .theme-entry .view-canvas > .grid, .theme-entry .view-canvas > .panel {
+    box-shadow: none;
+	position:relative;
+	margin:auto !important;
+}
+/*Removes Drop Shadow*/
+div[name^="Progress Bar"]{
+	background-color: transparent !important;
+}
+/*Transparent view backgronds*/

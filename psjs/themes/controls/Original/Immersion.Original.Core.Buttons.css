@@ -1,0 +1,34 @@
+/* buttons */
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.sbm4k2 .SFC .SourceCode-Forms-Controls-Web-Button {
+    background-color: var(--Button-Background-Color);
+    border-color: var(--Button-Border-Color);
+    border-radius: 5px;
+    color: var(--Button-Text-Color);
+    min-width: 100px;
+    font-weight: 600;
+    font-family: var(--Main-Font-Family-2);
+    font-size: var(--Label-Text-Size);
+    margin: 15px 10px;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    animation: none;
+}
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button:focus,
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button:active,
+.sbm4k2 .SFC a.SourceCode-Forms-Controls-Web-Button:focus,
+.sbm4k2 .SFC a.SourceCode-Forms-Controls-Web-Button:active {
+    background-color: var(--Button-Focus-Background-Color);
+    border-color: var(--Button-Focus-Border-Color);
+}
+
+.sbm4k2 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.sbm4k2 .SFC a.SourceCode-Forms-Controls-Web-Button:hover {
+    background-color: var(--Button-Hover-Background-Color);
+    border-color: var(--Button-Hover-Border-Color);
+    color: var(--Quiet-Button-Hover-Text-Color);
+}

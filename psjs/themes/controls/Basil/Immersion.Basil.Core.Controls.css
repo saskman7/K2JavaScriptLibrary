@@ -1,0 +1,223 @@
+/*Controls*/
+
+.sbm4k2 span,
+.sbm4k2.theme-entry span,
+.sbm4k2.theme-entry input[type=text] {
+    background-color: var(--Input-Background-Color);
+    font-family: var(--Main-Font-Family);
+    font-weight: 500;
+    font-size: var(--Main-Text-Size);
+    color: var(--Input-Text-Color);
+    white-space: pre-wrap;
+}
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-ControlPack-ListBox,
+.sbm4k2 .theme-entry .input-control.text-input .input-control-m-c,
+.sbm4k2 .theme-entry div.input-control.datepicker,
+.sbm4k2 .theme-entry div.input-control-buttons,
+.sbm4k2 .theme-entry div.input-control.select-box {
+    border-bottom: 2px var(--SB-Control-Border-Color, var(--Input-Border-Color)) solid;
+    border-radius: var(--SB-Control-Border-Radius);
+}
+
+/*watermarks*/
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+.sbm4k2 .theme-entry .input-control-watermark,
+.sbm4k2 .theme-entry .input-control.watermark a.input-control span,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark {
+    color: var(--SB-Control-Watermark-Color, var(--Label-Text-Color-1))!important;
+    font-family: var(--SB-Control-Watermark-Font-Family, var(--Main-Font-Family-2))!important;
+    font-weight: normal!important;
+    font-style: italic;
+    text-decoration: none!important;
+    white-space: nowrap;
+}
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark:hover,
+.sbm4k2 .theme-entry .input-control-watermark:hover,
+.sbm4k2 .theme-entry .input-control.watermark:hover a.input-control span,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox:hover div.listbox-watermark {
+    color: var(--SB-Control-Watermark-Colo, var(--Label-Hover-Text-Color-1)) !important;
+}
+
+/*input control hover*/
+
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox:hover,
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-ControlPack-ListBox:hover,
+.sbm4k2 .theme-entry div.input-control.datepicker:hover,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox:hover,
+.sbm4k2 .theme-entry .input-control.text-input .input-control-m-c:hover,
+.sbm4k2 .theme-entry div.input-control.datepicker:hover,
+.sbm4k2 .sbm4k2 .theme-entry .input-control.select-box .input-control-body:hover,
+.sbm4k2 .theme-entry div.input-control-buttons:hover,
+.sbm4k2 .theme-entry div.input-control.select-box:hover,
+.sbm4k2 .sbm4k2 .theme-entry .input-control.select-box .input-control:hover {
+    background-color: var(--Input-Disabled-Background-Color);
+}
+
+/*list items*/
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:hover {
+    background-color: var(--List-Item-Hover-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected {
+    background-color: var(--List-Item-Selected-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:focus {
+    border-color: var(--List-Item-Hover-Background-Color);
+}
+
+.sbm4k2 .theme-entry .input-control.select-box .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box .input-control-buttons,
+.sbm4k2 .theme-entry .input-control.select-box.lookup-box.calendar-control.datepicker {
+    background-color: var(--Input-Background-Color)!important;
+}
+
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box .input-control-buttons:hover,
+.sbm4k2 .theme-entry div.input-control-buttons:hover {
+    background-color: var(--Input-Disabled-Background-Color)!important;
+    color: var(--Input-Text-Color)!important;
+	border-color: transparent!important;
+	border: 3px;
+}
+
+.sbm4k2 .theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a {
+    background-color: var(--Input-Background-Color);
+}
+
+.sbm4k2 .theme-entry .control-group-container.input-control.text-input .input-control-m-c {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+}
+
+.sbm4k2 .stack-container .stack div.multi-select-box-list-item label.input-control .input-control-text {
+    text-overflow: unset;
+}
+
+.sbm4k2 .theme-entry div.input-control.select-box {
+    padding: 0px;
+    height: 18px;
+}
+
+.sbm4k2 .theme-entry .input-control.select-box.double-buttons.picker-input .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box.picker-input .input-control-buttons,
+.sbm4k2 .theme-entry .dropdown-box.input-control .input-control-wrapper>a,
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box .input-control-buttons {
+    height: 100%!important;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none !important;
+    background-color: var(--Input-Disabled-Background-Color);
+}
+
+/*Menu*/
+
+.theme-entry.sbm4k2 .drop-menu ul.drop-menu li:hover, 
+.theme-entry .sbm4k2 .drop-menu ul.drop-menu li:focus {
+    background-color: var(--Menu-Item-Highlight-Background-Color);
+    color: var(--Menu-Item-Highlight-Text-Color);
+}
+
+.theme-entry .drop-menu ul.drop-menu li.selected {
+    background-color: var(--Menu-Item-Hover-Background-Color);
+    color: var(--Menu-Item-Hover-Text-Color);
+}
+
+.theme-entry .input-control.select-box .input-control-buttons a:hover,
+.theme-entry .input-control.select-box .input-control-buttons a:focus {
+    background-color: var(--Menu-Item-Hover-Background-Color);
+    color: var(--Menu-Item-Hover-Text-Color);
+    border-color: var(--Menu-Item-Hover-Background-Color);
+}
+
+/*.theme-entry .input-control.select-box .input-control-buttons a.picker-search>span span, */
+.theme-entry .input-control.select-box .input-control-buttons a.picker-search:active>span span, 
+.theme-entry .input-control.select-box .input-control-buttons a.picker-search:hover>span span, 
+.theme-entry .input-control.select-box.active .input-control-buttons a.picker-search>span span, 
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.picker-search:hover>span span, 
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.picker-search:focus>span span {
+    background-color: var(--Input-Background-Color);
+    border: none;
+    color: var(--Menu-Item-Hover-Background-Color);
+}
+
+/*calendar picker*/
+
+.theme-entry .day.selected, .theme-entry .month.selected, 
+.theme-entry .year.selected, .theme-entry .day.selected:hover, 
+.theme-entry .month.selected:hover, .theme-entry .year.selected:hover, 
+.theme-entry .day.active, .theme-entry .month.active, .theme-entry .year.active {
+    background-color: var(--Calendar-Selected-Item-Background-Color);
+    color: var(--Calendar-Selected-Item-Text-Color);
+    border: none;
+}
+
+.theme-entry .dayname, .theme-entry a.day {
+    border: none;
+}
+.theme-entry a.day:hover {
+    border: none;
+}
+
+.theme-entry .day:hover, .theme-entry .month:hover, .theme-entry .year:hover {
+    background-color: var(--Calendar-Date-Hover-Background-Color);
+    color: var(--Calendar-Date-Hover-Text-Color);
+    border: none;
+}
+
+/*Picker Search*/
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover {
+    background-color: var(--Primary-Button-Hover-Border-Color);
+    color: var(--Primary-Button-Hover-Background-Color);
+    border-color: var(--Primary-Button-Hover-Border-Color);
+}
+
+.theme-entry .grid table.grid-content-table tr:hover>td, 
+.theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td {
+    background-color: var(--Menu-Item-Hover-Background-Color);
+    color: var(--Menu-Item-Hover-Text-Color);
+}
+
+.theme-entry .grid table.grid-content-table tr.selected>td, 
+.theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td {
+    background-color: var(--Menu-Item-Highlight-Background-Color);
+    color: var(--Menu-Item-Highlight-Text-Color);
+}
+
+/*remove extra border*/
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper, 
+.theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a {
+    border: none;
+}
+
+/*Text Area*/
+.SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .control-table-row.rt-row-mode {
+    padding-bottom: 20px;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor:not(.disabled) .RadEditor .reEditorModes ul li a.reMode_selected {
+    background-color: var(--List-Row-Selected-Background-Color);
+    color: var(--List-Row-Selected-Text-Color);
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .RadEditor .reEditorModes ul li a.reMode_selected:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-HTMLEditor .reEditorModes ul li a:hover {
+    background-color: var(--Button-Focus-Background-Color);
+    color: var(--Button-Focus-Text-Color);
+}
+
+/*Remove extra control borders*/
+
+.sbm4k2 .theme-entry .input-control.select-box .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box .input-control-buttons {
+    border-bottom: none;
+}
+
+.sbm4k2 .theme-entry .editable-area.input-control.styling-font.read-only,
+.sbm4k2 .theme-entry .editable-area.input-control.styling-font {
+    overflow: visible !important;
+}

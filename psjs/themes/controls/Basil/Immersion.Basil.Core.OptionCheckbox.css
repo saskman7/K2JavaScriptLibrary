@@ -1,0 +1,82 @@
+.sbm4k2 .theme-entry label.input-control.radio.checked .input-control-img:hover,
+.sbm4k2 .theme-entry label.input-control.radio .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.radio .input-control-img,
+.sbm4k2 .theme-entry label.input-control.radio .input-control-img:hover,
+.mobile .sbm4k2 .theme-entry label.input-control.radio .input-control-img:hover,
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img:hover,
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.checkbox .input-control-img,
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-img:hover,
+.mobile .sbm4k2 .theme-entry label.input-control.checkbox .input-control-img:hover {
+    background-image: none !important;
+}
+
+.sbm4k2 .theme-entry label.input-control.radio .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.radio .input-control-img,
+.sbm4k2 .theme-entry label.input-control.radio.checked .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.radio.checked .input-control-img,
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.checkbox .input-control-img,
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img {
+    font-family: var(--SB-Toolbar-Icon-font, "Font Awesome 5 Free");
+    font-size: 1.5rem;
+}
+
+.sbm4k2 .theme-entry label.input-control.radio .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.radio .input-control-img,
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.checkbox .input-control-img {
+    background-color: var(--background);
+    border: 3px solid var(--View-Header-Border-Color);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 24px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 24px;
+    background-image: none;
+}
+.sbm4k2 .theme-entry label.input-control.radio.checked .input-control-img::before,
+.mobile .sbm4k2 .theme-entry label.input-control.radio.checked .input-control-img::before,
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img::before,
+.mobile .sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img::before {
+    content: "\f058";
+    color: var(--Background);
+}
+
+.sbm4k2 .theme-entry label.input-control.radio.checked .input-control-img,
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img {
+    background-color: var(--Toolbar-Border-Color);
+    border-color: var(--Toolbar-Border-Color);
+    padding-top: 1px;
+}
+
+.sbm4k2 .theme-entry .stack-container .stack div.multi-select-box-list-item label.input-control .input-control-text,
+.moble .theme-entry .stack-container .stack div.multi-select-box-list-item label.input-control .input-control-text {
+    overflow: visible;
+}
+
+.sbm4k2 .theme-entry .checkbox-outer-panel .input-control.checkbox{
+    display: flex;
+    /*padding: 2px;
+    align-items: center;
+    justify-items: center;*/
+}
+
+.sbm4k2 .theme-entry .multi-select-outer-panel .multi-select-box-list-item .input-control.radio {
+    /*padding: 2px;*/
+}
+
+.sbm4k2 .theme-entry .stack-container .stack div.multi-select-box-list-item label.input-control .input-control-img {
+    /*padding: 2px;*/
+}
+.sbm4k2 .theme-entry .toolbars .input-control div {
+    overflow: visible;
+}
+
+.sbm4k2 .theme-entry .input-control-wrapper.multi-select-outer-panel {
+    overflow: visible;
+}
+/* ref https://codepen.io/AllThingsSmitty/pen/WjZVjo*/

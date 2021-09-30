@@ -1,0 +1,18 @@
+    [name~='scpsapimenubutton'],
+    [alt~='scpsapimenubutton'] {
+        display: none!important;
+    }
+    
+    .scpsapi-mobile-width [name~='scpsapimenubutton'],
+    .scpsapi-mobile-width [alt~='scpsapimenubutton'] {
+        display: inline-block!important;
+    }
+
+    .scpsapi-mobile-width.mobile .theme-entry .form .row .view {
+        /*Fix bad styles in SF*/
+        flex-grow: 1;
+    }
+    
+    .scpsapi-mobile-width.mobile .theme-entry .form .row .view {
+        width: 100%!important;
+    }

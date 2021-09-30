@@ -1,0 +1,264 @@
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle {
+    background-color: transparent;
+    /* font-size: 18px; */
+    font-weight: 500;
+}
+
+.sbm4k2 .editor-cell {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.sbm4k2 .theme-entry div.picker {
+    height: 100%;
+}
+
+/*.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-DataLabel {
+    background-color: var(--Input-Disabled-Background-Color);
+}*/
+
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-TextBox,
+.sbm4k2 .theme-entry .input-control.text-input .input-control-m-c {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark,
+.sbm4k2 .theme-entry .input-control-watermark,
+.sbm4k2 .theme-entry .input-control.watermark a.input-control span,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listbox-watermark {
+    color: var(--Input-Watermark-Text-Color)/*!important*/;
+    font-family: var(--Main-Font-Family)/*!important*/;
+    font-size: 1.3rem/*!important*/;
+    font-weight: normal/*!important*/;
+    text-decoration: none/*!important*/;
+    white-space: nowrap;
+}
+
+.sbm4k2 .theme-entry tr.edit-template-row .input-control.watermark a.input-control span,
+.sbm4k2 .theme-entry tr.edit-template-row .input-control.select-box .input-control-watermark {
+    padding-left: 2px;
+}
+
+.sbm4k2 .theme-entry .input-control-watermark {
+    padding-left: 0px;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox div.listwrapper.watermark,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .title,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:hover {
+    background-color: var(--Menu-Item-Hover-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv.selected {
+    background-color: var(--Menu-Item-Highlight-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-ListBox .stylewrapper .hoverdiv:focus {
+    border-color: var(--Menu-Item-Highlight-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+/*.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-DataLabel,*/
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-ControlPack-ListBox,
+.sbm4k2 .theme-entry .input-control.text-input .input-control-m-c,
+/*.sbm4k2 .theme-entry div.input-control.datepicker,*/
+.sbm4k2 .theme-entry div.input-control-buttons,
+/*.sbm4k2 .theme-entry div.input-control.select-box,*/
+.sbm4k2 .theme-entry .file-wrapper {
+    border: 0;
+    border-radius: 3px;
+    padding-top: 16px;
+    padding-right: 15px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    box-shadow: 0 0 0 1px var(--Input-Border-Color);
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    width: calc(100% - 2px);
+    font-family: var(--Main-Font-Family);
+    background-color: var(--Input-Background-Color);
+}
+.sbm4k2 .theme-entry div.input-control.datepicker,
+.sbm4k2 .theme-entry div.input-control.select-box {
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px var(--Input-Border-Color);
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    width: calc(100% - 2px);
+    font-family: var(--Main-Font-Family);
+    background-color: var(--Input-Background-Color);
+}
+
+/*
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle {
+    font-family: var(--input-text-font-family);
+    text-transform: none;
+    box-shadow: 0 0 0 1px var(--Input-Border-Color);
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+*/
+
+.sbm4k2 .theme-entry .file-wrapper {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* width: calc(100% - 32px); */
+}
+
+.sbm4k2 .theme-entry .file-watermark.file-ellipsis {
+    text-align: center;
+}
+
+.sbm4k2 .theme-entry .file-thumbnail {
+    width: 100%!important;
+}
+
+.sbm4k2 .theme-entry div.input-control-buttons {
+    box-shadow: none;
+    border: none!important;
+    background-color: var(--Input-Background-Color)!important;
+}
+
+.sbm4k2 .theme-entry .input-control.select-box .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box .input-control-buttons,
+.sbm4k2 .theme-entry .input-control.select-box.lookup-box.calendar-control.datepicker {
+    background-color: var(--Input-Background-Color)!important;
+}
+
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box .input-control-buttons:hover,
+.sbm4k2 .theme-entry div.input-control-buttons:hover {
+    background-color: var(--Menu-Item-Hover-Background-Color)!important;
+    color: var(--Input-Text-Color)!important;
+}
+
+.sbm4k2 .theme-entry .styling-outer-wrapper .input-control-m .input-control-m-c .input-control-wrapper a {
+    background-color: var(--Input-Background-Color);
+}
+
+.sbm4k2 .theme-entry .input-control.select-box input[type=text] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sbm4k2 .theme-entry .control-group-container.input-control.text-input .input-control-m-c {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+}
+
+.sbm4k2 .stack-container .stack div.multi-select-box-list-item label.input-control .input-control-text {
+    text-overflow: unset;
+}
+
+.sbm4k2 .theme-entry div.input-control.select-box {
+    padding: 0px;
+    height: 52px;
+}
+
+.sbm4k2 .theme-entry .input-control.calendar-control .input-control-watermark {
+    top: 25%;
+    left: 10px;
+}
+
+.sbm4k2 .theme-entry .input-control.select-box.double-buttons.picker-input .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box.picker-input .input-control-buttons,
+.sbm4k2 .theme-entry .dropdown-box.input-control .input-control-wrapper>a,
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box .input-control-buttons, 
+.sbm4k2 .theme-entry .input-control.calendar-control .input-control-wrapper {
+    height: 100%;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sbm4k2 .theme-entry tr.edit-template-row div.input-control.select-box {
+    padding: 0px;
+    height: 10px;
+}
+
+.sbm4k2 .theme-entry tr.edit-template-row .input-control.select-box.double-buttons.picker-input .input-control-m-c,
+.sbm4k2 .theme-entry tr.edit-template-row .input-control.select-box.picker-input .input-control-buttons,
+.sbm4k2 .theme-entry tr.edit-template-row .dropdown-box.input-control .input-control-wrapper>a,
+.sbm4k2 .theme-entry tr.edit-template-row .input-control.select-box.dropdown-box .input-control-buttons {
+    height: 100%!important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sbm4k2 .theme-entry label.input-control .input-control-text {
+    font-family: var(--Main-Font-Family);
+    padding-left: 10px;
+}
+
+.sbm4k2 .SourceCode-Forms-Controls-Web-ControlPack-AutoComplete .input-control .input-control-m-c {
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+.sbm4k2 .theme-entry .select-box span {
+    font-size: 1.4rem;
+}
+
+.sbm4k2 .theme-entry tr.edit-template-row .select-box span {
+    font-size: 1.3rem;
+}
+
+.sbm4k2 .theme-entry div.read-only:not(.hyperlinkTopPanel),
+.sbm4k2 .theme-entry .input-control .select-box .read-only,
+.sbm4k2 .theme-entry .input-control .select-box .dropdown-box .read-only,
+.sbm4k2 .theme-entry .input-control.text-input.read-only .input-control-m .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box.read-only .styling-outer-wrapper .input-control-body .input-control-m .input-control-m-c .input-control,
+.sbm4k2 .theme-entry .input-control.select-box.dropdown-box.read-only .styling-outer-wrapper .input-control-buttons,
+.sbm4k2 .theme-entry .input-control.select-box.lookup-box.read-only .styling-outer-wrapper .input-control-body .input-control-m .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box.lookup-box.read-only .styling-outer-wrapper .input-control-buttons,
+.sbm4k2 .theme-entry .input-control.select-box.lookup-box.calendar-control.read-only,
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.readonly,
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.readonly,
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.readonly .optionwrapper,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.readonly .stylewrapper .sourcetitle,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice.readonly .stylewrapper .destinationtitle,
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-ListBox.readonly {
+    background-color: var(--Input-Disabled-Text-Color)!important;
+    opacity: 1;
+}
+
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-ControlPack-ListBox.readonly .optionwrapper>div {
+    color: var(--Input-Text-Color);
+}
+
+.sbm4k2 .theme-entry input[type=text] {
+    color: var(--Input-Text-Color);
+}
+
+.sbm4k2 div,
+.sbm4k2 td,
+.sbm4k2 .theme-entry .input-control textarea,
+.sbm4k2 .theme-entry input[type=text],
+.sbm4k2 .theme-entry .input-control.watermark a.input-control span,
+.sbm4k2 .theme-entry .input-control.select-box .input-control-watermark {
+    padding: 0px;
+    font-size: 1.4rem;
+    font-family: var(--Main-Font-Family);
+}
+
+
+.sbm4k2 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.invalid,
+.sbm4k2 .theme-entry .input-control.text-input.invalid .input-control-m-c,
+.sbm4k2 .theme-entry div.input-control.select-box.invalid {
+    border: 1px var(--invalid-border-color) solid!important;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px var(--Input-Error-Border-Color);
+    box-sizing: border-box;
+    background-color: var(--Input-Error-Background-Color)!important;
+    color: var(--Input-Error-Border-Color); /*Added 4-17*/
+}

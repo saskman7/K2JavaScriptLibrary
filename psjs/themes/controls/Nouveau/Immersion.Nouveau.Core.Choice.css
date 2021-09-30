@@ -1,0 +1,64 @@
+.sbm4k2 .theme-entry label.input-control.radio .input-control-img,
+.mobile .sbm4k2 .theme-entry label.input-control.radio .input-control-img {
+    background-image: none;
+    /*background-color: red;*/
+    /* width: 40px; */
+    /* height: 40px; */
+    border-radius: 1.5em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--Primary-Button-Border-Color);
+}
+
+.sbm4k2 .theme-entry label.input-control.radio.checked .input-control-text {
+    /* color: var(--active-color); */
+    font-weight: 700;
+}
+
+.sbm4k2 .stack-container .stack div.multi-select-box-list-item label.input-control.radio .input-control-text {
+    overflow: visible;
+    }
+
+.sbm4k2 .theme-entry label.input-control.radio.checked .input-control-img {
+    /*background-color:var(--button-border-color);*/
+    background-color: var(--Primary-Button-Hover-Border-Color);
+    border-color: var(--Primary-Button-Hover-Border-Color);
+}
+
+.sbm4k2 .input-control.radio.checked,
+.mobile .sbm4k2 .input-control.radio.checked {
+    background-image: none;
+    /*background-color: blue;*/
+}
+
+.sbm4k2 .stack-container {
+    display: flex;
+    white-space: pre-wrap;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    align-items: flex-start;
+    /* border: red 1px solid; */
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.sbm4k2 .theme-entry label.input-control.radio:not(.read-only):not(.disabled):hover .input-control-img,
+.theme-entry input[type=radio]:not(.read-only):not(.disabled):hover+label,
+.mobile .sbm4k2 .theme-entry label.input-control.radio:not(.read-only):not(.disabled):hover .input-control-img,
+.mobile .theme-entry input[type=radio]:not(.read-only):not(.disabled):hover+label {
+    background-image: none;
+    background-color: var(--Primary-Button-Border-Color);
+    border-color: var(--Primary-Button-Border-Color);
+}
+
+.sbm4k2 .theme-entry .input-control.radio {
+    outline: none;
+}
+
+.sbm4k2 .theme-entry .input-control.text-input.control-group-container .input-control-m-c {
+    box-shadow: none;
+}
+
+.sbm4k2 .stack-container .stack div.multi-select-box-list-item label.input-control .input-control-text {
+    overflow: visible;
+}

@@ -1,0 +1,42 @@
+    /*Make the form a 100% height layout */
+    .runtime-content,
+    .runtime-form.theme-entry,
+    .runtime-form>.form,
+    .runtime-form>.form>.row {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    /*Specific 2 column layout */
+    .runtime-form>.form>.row {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    /*All Columns */
+    .runtime-form>.form>.row>* {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    /*All views and controls in the dropzone layout*/
+    .runtime-form>.form>.row>.view,
+    .runtime-form>.form>.row>.view>.innerpanel {
+        display: flex;
+        position: relative;
+        flex-grow: 1;
+    }
+
+
+    /*All views and controls in the dropzone layout*/
+    .runtime-form>.form>.row>.formcontrol,
+    .runtime-form>.form>.row>.formcontrol>.innerpanel {
+        display: flex;
+        position: relative;
+        flex-grow: 1;
+    }

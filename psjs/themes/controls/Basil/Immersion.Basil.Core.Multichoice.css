@@ -1,0 +1,61 @@
+/*Multiselect box colors*/
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected:hover {
+	color: var(--Menu-Item-Hover-Text-Color);
+}
+.sbm4k2 .theme-entry .input-control.select-box .input-control-buttons a.ellipsis>span span, 
+.theme-entry .input-control.select-box .input-control-buttons a.ellipsis:active>span span, 
+.theme-entry .input-control.select-box.active .input-control-buttons a.ellipsis>span span, 
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.ellipsis:hover>span span, 
+.theme-entry .input-control.select-box.read-only .input-control-buttons a.ellipsis:focus>span span {
+	color: var(--Menu-Item-Highlight-Text-Color);
+}
+/*background panel*/
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv {
+	color: var(--Menu-Item-Hover-Text-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected,
+.sbm4k2.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected {
+	color: var(--Menu-Item-Highlight-Text-Color);
+	background-color: var(--Menu-Item-Highlight-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:hover {
+	color: var(--Menu-Item-Hover-Text-Color);
+	background-color: var(--Menu-Item-Hover-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice  {
+	box-shadow: none;
+}
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle, 
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle {
+	color: var(--View-Header-Text-Color);
+	font-family: var(--Main-Font-Family-2);
+	font-weight: 550;
+    font-size: 1.5rem;
+    border-bottom: 3px var(--View-Header-Border-Color) solid;
+    height: 30px;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper {
+    padding-bottom: 5px !important;
+    border-bottom: 3px var(--View-Header-Border-Color) solid;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .multiSelectSelect {
+	background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle, 
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle {
+	background-color: var(--View-Header-Background-Color) !important;
+	padding: 5px;
+	min-height: 20px;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .sourcetitle, 
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .destinationtitle {
+	line-height: 1.5rem;
+}

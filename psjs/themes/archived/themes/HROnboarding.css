@@ -1,0 +1,208 @@
+.theme-entry, .theme-entry div, .theme-entry span, .theme-entry td, .theme-entry li, .theme-entry p, .theme-entry textarea, .theme-entry input[type='text'], .theme-entry input.text, .theme-entry select, .theme-entry option {
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	background-color: transparent !important;
+} 
+body {
+    background-image: url('https://k2nats.blob.core.windows.net/background-images/gradient%20green%20background.jpg') !important;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+    background-color: #ffffff !important;
+}
+.theme-entry .dialog {
+  box-shadow: none;
+  position: absolute;
+  background-color: #ffffff !important;
+  /*above any other z-indexes, like the paging control*/
+
+}
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+}h1 {
+  font-size: 55px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+a.tab{
+	box-sizing: border-box !important;
+	border-width: 4px 1px 0 1px !important;
+	border-color: transparent !important;
+	height: 31px !important;
+	font-size: 14px !important;
+	color: #FFFFFF !important;
+}
+a.tab .tab-text{
+	font-size: 14px !important;
+	color: #16ADA1 !important;
+	font-weight: bold !important;
+}
+a.tab.selected, a.tab.selected:hover{
+	border-color: #16ADA1 !important;
+    color: #16ADA1 !important;
+    border-bottom: 8px solid #157EAC !important;
+	background: none !important;
+	font-size: 14px !important;
+}
+a.tab.selected .tab-text, a.tab.selected:hover .tab-text{
+	background: none !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
+	color: #000000 !important;
+}
+.tab-box-tabs{
+	height: 30px !important;
+	border-bottom: 1px solid white !important;
+	background: #ffffff !important;
+}
+
+a.tab:hover{
+	border-color: #ffffff !important;
+    background: #ffffff !important; 
+	border-bottom: 3px solid #157EAC !important;
+
+}
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.select-items div:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #16ADA1 !important;
+}
+div[name^="Transparent"]{
+	background-color: rgba(255,255,255,0) !important;
+}
+/*display: CM - Header system name: */
+div[name^="HRV-"]{
+	background-color: rgba(255,255,255,0.9) !important;
+}
+/*Transparent white background on views with name that starts with HRV-*/
+td[name^="TR-"]{
+	background-color: #16ADA1 !important;
+}
+/*Table Row color background blue - not working but tr name starts with TR-*/
+.theme-entry .view .innerpanel > .grid, .theme-entry .view .innerpanel > .panel, .theme-entry .view-canvas > .grid, .theme-entry .view-canvas > .panel {
+    box-shadow: none;
+	position:relative;
+	margin:auto !important;
+}
+div class[id^="PickerSearchDialog"]{
+	background-color: rgba(255,255,255,0.85) !important;
+}
+/*Attempt to get the picker views to have a background*/
+
+
+/* .button-text{color: #003f7f !important;} */
+/*.row .view{margin-top:0px !important;}
+/*.formcontrol{display: none !important;}*/
+/* .delete .button-c .button-icon{
+  background: no-repeat url('https://denallixtech.sharepoint.com/sites/Bozeman/K2Pages/btnIconCancel.png') !important;
+}
+
+.add .button-c .button-icon{
+    background: no-repeat url('https://denallixtech.sharepoint.com/sites/Bozeman/K2Pages/btnIconAdd.png') !important; 
+} */
+
+.grid-content-table td{box-sizing: border-box;}
+.grid-content-table tr:nth-child(even) td{background: #ccc !important;}
+.grid-column-header-table tr{border-bottom:1px solid black;}
+.form{padding:10px 20px !important;}
+.grid-content-table tr:hover td.first{border-left:2px solid #!16ADA1;}
+.theme-entry .grid table.grid-content-table tr:nth-child(odd):hover td, .theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover:nth-child(odd) td{background: #16AD64 !important;}
+.theme-entry .grid table.grid-content-table tr:nth-child(even):hover td, .theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover:nth-child(even) td{background: #16AD64 !important;}
+
+span[name^="HRL-"]{
+	font-size: 11px !important;
+	color: #3D4849 !important;
+	font-weight: bold !important;
+}
+/*LAbels for control Color and weight*/
+span[name^="HRT-"]{
+	font-size: 14px !important;
+	color: #16ADA1 !important;
+	font-weight: bold !important;
+	background-color: rgba(255,255,255,0.9) !important;
+}
+/*LAbels for control Color and weight*/
+
+.theme-entry .drop-menu ul.drop-menu li:hover span {
+	color: #16AD64 !important;
+	font-weight: bold !important;
+} 
+/*drop down list hover item color*/
+.theme-entry .drop-menu ul.drop-menu li.selected span {
+    color: #16AD64  !important;
+}
+/*drop down list selected item color*/
+
+tr[class^='WorklistItemGridRow']:hover { 
+  background-color: #16AD64 !important;
+} 
+/*worklist hover item color*/
+
+tr[class^='WorklistItemGridRow']:active { 
+  background-color: #16AD64 !important;
+} 
+/*worklist selected item color*/
+tr[class^='WorklistItemGridRow']:focus { 
+  background-color: #16AD64 !important;
+} 
+/*worklist selected item color*/
+tr[class^='WorklistItemGridRow']:selection { 
+  background-color: #16AD64 !important;
+} 
+/*worklist selected item color*/
+.theme-entry .worklist-action-menu-container div:hover {
+    background-color: #16AD64 !important;
+}
+/*worklist action hover item color*/
+.WorklistItemGridRow.worklist-grid-even.ShowMenu {
+	background-color: #16AD64 !important
+	} 
+	
+.WorklistItemGridRow.worklist-grid-odd.ShowMenu {
+	background-color: #16AD64 !important
+	} 
+.theme-entry .menu ul {
+    background: white;
+}
+/*picker background color*/
+.theme-entry .menu ul li:hover span {
+	color: #16AD64 !important;
+	font-weight: bold !important;
+}
+/*picker background hover item color*/
+
+.theme-entry .tooltip.validation {
+    background-color: #16AD64 !important;
+	color: white !important;
+    border-color: white;
+    border-radius: 0;
+}
+/*tooltip format*/
+
+.theme-entry .popup.id-calendar-control-popup {
+    background-color: white !important;
+}
+
+/*calendar background*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected:hover {
+    color: #16AD64 !important;
+	font-weight: bold !important;
+}
+/*Hover Selected mutiselect*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv.selected {
+    color: #16AD64 !important;
+}
+/*Hover Selected mutiselect*/
+.theme-entry .SourceCode-Forms-Controls-Web-ControlPack-MultiChoice .stylewrapper .hoverdiv:hover {
+    color: #16AD64 !important;
+	font-weight: bold !important;
+}
+/*Hover Selected mutiselect*/

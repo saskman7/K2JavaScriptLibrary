@@ -1,0 +1,86 @@
+/* ### STYLING VARIABLES ### */
+:root {
+    --borderRadius: 15px;
+}
+
+/* ### SET TABS TO TRANSPARENT BACKGROUND ### */
+div.tab-box-body {
+    background-color: transparent !important;
+}
+
+/* ### ROUNDED CORNERS - SHIFT TABS TO COMPENSATE FOR CORNERS ### */
+.theme-entry .tab-box-tabs {
+    margin-left: var(--borderRadius) !important;
+}
+
+/* ### ROUNDEND CORNERS - CONTAINERS - ALL 4 DIV CORNERS ### */
+.theme-entry .view,
+.theme-entry .innerpanel,
+.theme-entry .panel,
+.theme-entry .grid {
+    border-radius: var(--borderRadius) !important;
+}
+
+
+/* ### ROUNDEND CORNERS - FORM HEADER VIEW - ALL 4 DIV CORNERS ### */
+.theme-entry [name*='RoundedCorners'].panel .panel-body,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-t,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-t-l,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-t-c,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-t-r,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-m,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-m-l,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-m-c,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-m-c .panel-body-wrapper,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-m-r,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-b,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-b-l,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-b-c,
+.theme-entry [name*='RoundedCorners'].panel .panel-body .panel-body-b-r {
+    border-radius: var(--borderRadius) !important;
+}
+
+/* ### ROUNDEND CORNERS - VIEWS - TOP DIV CORNERS ### */
+.theme-entry .panel .panel-header,
+.theme-entry .panel .panel-header .panel-header-l,
+.theme-entry .panel .panel-header .panel-header-c,
+.theme-entry .panel .panel-header .panel-header-c .panel-header-wrapper,
+.theme-entry .grid .grid-header,
+.theme-entry .grid .grid-header-wrapper,
+.theme-entry .grid .grid-header-wrapper .grid-header-text {
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0 !important;
+}
+
+/* ### ROUNDEND CORNERS - VIEWS - BOTTOM DIV CORNERS ### */
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-t,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-t-l,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-t-c,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-t-r,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-m,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-m-l,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-m-c,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-m-c .panel-body-wrapper,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-m-r,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-b,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-b-l,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-b-c,
+.theme-entry .panel:not([name*='RoundedCorners']) .panel-body .panel-body-b-r,
+.theme-entry .grid .grid-body,
+.theme-entry .grid .grid-body-content,
+.theme-entry .grid .grid-body-content .grid-body-content-wrapper,
+.theme-entry .grid .grid-body-content .grid-body-content-wrapper .scroll-wrapper,
+.theme-entry .grid .grid-edit-templates,
+.theme-entry .grid .grid-display-templates {
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius) !important;
+}
+
+/* ### ROUNDEND CORNERS - VIEWS - DIVS THAT SHOULD HAVE ROUNDED CORNERS ### */
+.theme-entry .grid .grid-toolbars,
+.theme-entry .grid .grid-toolbars .toolbars,
+.theme-entry .grid .grid-toolbars .toolbars .toolbar,
+.theme-entry .grid .grid-toolbars .toolbars .toolbar .toolbar-wrapper,
+.theme-entry .grid .grid-body .grid-column-headers,
+.theme-entry .grid .grid-body .grid-column-headers .grid-column-headers-wrapper {
+    border-radius: 0 !important;
+}

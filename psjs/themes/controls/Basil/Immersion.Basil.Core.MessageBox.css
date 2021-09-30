@@ -1,0 +1,88 @@
+.theme-entry .dialog.no-buttons .popup-body {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2.theme-entry .panel-header-wrapper {
+    border-bottom: none;
+}
+.sbm4k2.theme-entry .dialog .popup-footer .popup-footer-c {
+    top: -5px;
+}
+
+.sbm4k2 .theme-entry .popup, .theme-entry .dialog {
+    background-color: var(--Form-Background-Color);
+}
+
+.theme-entry .popup-header {
+    background-color: var(--View-Header-Background-Color);
+    font-weight: 700;
+}
+
+.theme-entry .dialog .popup-header-text {
+    color: var(--View-Header-Text-Color);
+}
+
+.theme-entry .dialog.error-message .message-box-content .panel, 
+.theme-entry .dialog.warning-message .message-box-content .panel, 
+.theme-entry .dialog.info-message .message-box-content .panel, 
+.theme-entry .dialog.confirmation-message .message-box-content .panel, 
+.theme-entry .dialog.runtime-message .message-box-content .panel {
+    top:-45px;
+}
+
+.theme-entry .scroll-wrapper {
+    overflow: visible;
+}
+
+.theme-entry .dialog .popup-footer-c {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .dialog .popup-footer .SourceCode-Forms-Controls-Web-Button {
+    background-color: var(--Button-Background-Color);
+    border: 3px var(--Button-Border-Color) solid;
+    color: var(--Button-Text-Color);
+}
+
+@media only screen and (max-resolution: 1.5dppx), (max-resolution: 144dpi), (-webkit-max-device-pixel-ratio: 1.5), not all {
+    .theme-entry .message-box-content.info:before,
+    .theme-entry .message-box-content.message:before,
+    .theme-entry .message-box-content.confirmation:before,
+    .theme-entry .message-box-content.error:before,
+    .theme-entry .message-box-content.warning:before {
+        background-image: none !important;
+        height: 40px !important;
+    }
+}
+
+.theme-entry .message-box-content.info:before,
+.theme-entry .message-box-content.message:before,
+.theme-entry .message-box-content.confirmation:before,
+.theme-entry .message-box-content.error:before,
+.theme-entry .message-box-content.warning:before {
+    font-family: var(--SB-Toolbar-Icon-font, "Font Awesome 5 Free");
+    font-weight: 900;
+    color: var(--Heading-Text-Color);
+    height: 100%;
+    position: relative;
+    font-size: 4rem;
+    top: 0px;
+}
+
+.theme-entry .message-box-content.info:before {
+    content: var(--SB-MessageBox-Icon-info, "\f05a");
+}
+.theme-entry .message-box-content.message:before {
+    content: var(--SB-MessageBox-Icon-message, "\f4ad");
+}
+.theme-entry .message-box-content.confirmation:before {
+    content: var(--SB-MessageBox-Icon-confirmation, "\f46c");
+}
+.theme-entry .message-box-content.error:before {
+    color: var(--View-Header-Text-Color);
+    content: var(--SB-MessageBox-Icon-error, "\f714");
+}
+.theme-entry .message-box-content.warning:before {
+    color: var(--View-Header-Text-Color);
+    content: var(--SB-MessageBox-Icon-warning, "\f071");
+}

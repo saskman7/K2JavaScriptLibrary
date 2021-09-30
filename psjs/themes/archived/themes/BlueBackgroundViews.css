@@ -1,0 +1,115 @@
+.theme-entry, .theme-entry div, .theme-entry span, .theme-entry td, .theme-entry li, .theme-entry p, .theme-entry textarea, .theme-entry input[type='text'], .theme-entry input.text, .theme-entry select, .theme-entry option {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-size: 11pt;
+}
+/*Theme Entry global background and font*/
+
+body {
+    background-image: url("https://k2nats.blob.core.windows.net/background-images/Gradient-blue.jpg");
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% !important;
+}
+span[name^="L-"]{
+	font-size: 12px !important;
+	color: #21417f !important;
+	font-weight: bold !important;
+}
+/*Label Formatting*/
+.theme-entry .view .innerpanel > .grid, .theme-entry .view .innerpanel > .panel, .theme-entry .view-canvas > .grid, .theme-entry .view-canvas > .panel {
+    box-shadow: none;
+	position:relative;
+	margin:auto !important;
+}
+/*Removes Drop Shadow*/
+table[name^='TB-']{ 
+  background-color: white !important;
+} 
+/*worklist selected item color was #056DAA*/
+span[name^="L-"]{
+	font-size: 12px !important;
+	color: #01467F !important;
+	padding-left: 8px !important;
+}
+/*Label Formatting*/
+.theme-entry .input-control.select-box {
+    background-color: white !important;
+	color: #21417f;
+}
+/*Control background Color*/
+.theme-entry span.textbox-style-wrapper, .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox {
+    background-color: white !important;
+}
+/*textbox white background*/
+.theme-entry .input-control textarea {
+    background-color: white !important;
+}
+/*text area white background*/
+.theme-entry .multi-select-outer-panel .multi-select-box-list-item label.input-control .input-control-text, .theme-entry .checkbox-outer-panel label.input-control .input-control-text, .theme-entry label.input-control.radio .input-control-text {
+    padding-left: 8px;
+    color: #056DAA;
+	size:13px;
+	font-weight: italic;
+}
+/*radio button text format*/
+span[name^="T-"]{
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	font-weight: bold !important;
+	padding-bottom: 7px !important;
+}
+/*SubTitle Formatting*/
+
+td[name^='TR-'] { 
+  background-color: #01467F !important;
+} 
+/*worklist hover item color*/
+td[name^='Lt-'] { 
+  background-color: #F8F8F8 !important;
+} 
+/*light table cell color*/
+td[name^='Dk-'] { 
+  background-color: #E8E8E8 !important;
+} 
+/*dark table cell color*/
+span[name^="Form Title"]{
+	font-size: 22px !important;
+	color: #01467F !important;
+	font-weight: bold !important;
+	padding-bottom: 7px !important;
+}
+/*Form Title Formatting*/
+a.tab .tab-text{
+	font-size: 14px !important;
+	color: #FFFFFF !important;
+	font-weight: bold !important;
+}
+/*tab text formatting*/
+a.tab.selected .tab-text{
+	background: none !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
+	color: #056DAA !important;
+}
+.grid-content-table td{box-sizing: border-box;}
+.grid-content-table tr:nth-child(even) td{background: #ccc !important;}
+.grid-column-header-table tr{border-bottom:1px solid black;}
+.form{padding:10px 20px !important;}
+.grid-content-table tr:hover td.first{border-left:2px solid #01467F;}
+.theme-entry .grid table.grid-content-table tr:nth-child(odd):hover td, .theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover:nth-child(odd) td{background: #01467F !important;}
+.theme-entry .grid table.grid-content-table tr:nth-child(even):hover td, .theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover:nth-child(even) td{background: #01467F !important;}
+
+input[type=text]:hover {
+  color: #21417f !important;
+  font-weight: bold !important;
+}
+/*mouse over color*/
+input[type=text]:focus {
+  color: #21417f !important;
+	font-weight: bold !important;
+}
+/*selected mouse in box color*/
+input[type=text]:enabled {
+  color: #21417f  !important;
+}
+/*Hover color*/

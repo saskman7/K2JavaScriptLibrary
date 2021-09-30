@@ -1,0 +1,75 @@
+.sbm4k2 .theme-entry .tab-box .tab-box-body {
+    background-color: var(--Tab-Background-Color);
+    margin-top: 25px;
+}
+
+.sbm4k2 .theme-entry .tab-box.tabs-top ul.tab-box-tabs {
+    background-color: var(--Tab-Background-Color);
+    width: 100%;
+    }
+
+    .sbm4k2 .theme-entry.runtime-form>.tab-box {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .sbm4k2 .theme-entry.runtime-form>.tab-box .row .SFC.SourceCode-Forms-Controls-Web-Table {
+        text-align: left;
+    }
+
+    .sbm4k2 .theme-entry.runtime-form>.tab-box ul.tab-box-tabs {
+        display: inline-block;
+        background-color: var(--Tab-Background-Color);
+        padding: 7px;
+        padding-bottom: 12px;
+    }
+    
+    .sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper {
+    /*background-color: var(--Menu-Item-Highlight-Background-Color);*/
+    cursor: default;
+    background-color: var(--Tab-Selected-Background-Color);
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper {
+    border: none;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab span.tab-text {
+    width: 80%;
+    height: auto;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text {
+    color: var(--Tab-Text-Color);
+    font-weight: 600;
+    font-family: var(--Main-Font-Family-2);
+    font-size: 1.3rem;
+    opacity: 1;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-text {
+    opacity: 1;
+    color: var(--Tab-Text-Color);
+    cursor: default;
+    border-bottom: 3px var(--Tab-Text-Color) solid;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-text,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-text {
+    color: var(--Tab-Hover-Text-Color);
+    cursor: default;
+}
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper {
+    color: var(--Tab-Hover-Text-Color);
+    background-color: var(--Tab-Hover-Background-Color);
+}

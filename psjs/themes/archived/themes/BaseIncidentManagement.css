@@ -1,0 +1,76 @@
+.theme-entry, .theme-entry div, .theme-entry span, .theme-entry td, .theme-entry li, .theme-entry p, .theme-entry textarea, .theme-entry input[type='text'], .theme-entry input.text, .theme-entry select, .theme-entry option {
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	background-color: transparent !important;
+}
+body {
+    background-image: url('https://k2nats.blob.core.windows.net/background-images/bokeh-blue-background-2.png') !important;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-color: #29313E !important;
+	background-size: 100% !important;
+}
+
+/*Theme Entry global background and font*/
+.theme-entry .view .innerpanel > .grid, .theme-entry .view .innerpanel > .panel, .theme-entry .view-canvas > .grid, .theme-entry .view-canvas > .panel {
+    box-shadow: none;
+	position:relative;
+	margin:auto !important;
+}
+/*Removes Drop Shadow*/
+span[name^="ST-"]{
+	font-size: 16px !important;
+	color: #D04931 !important;
+	font-weight: bold !important;
+	padding-bottom: 7px !important;
+}
+/*SubTitle Formatting*/
+span[name^="L-"]{
+	font-size: 13px !important;
+	color: #29313E !important;
+	font-weight: bold !important;
+	padding-left: 18px !important;
+}
+/*Label Formatting*/
+span[name^="Q-"]{
+	font-size: 11px !important;
+	color: #29313E !important;
+	font-weight: bold !important;
+	padding-left: 4px !important;
+}
+/*Question Formatting*/
+span[name^="Se-"]{
+	font-size: 12px !important;
+	color: #FFFFFF !important;
+	font-weight: bold !important;
+	padding-bottom: 5px !important;
+}
+/*Se - special instructions Formatting*/
+td[name^="CR-"]{
+	background-color: #FBE6C0 !important;
+}
+/*Table Row color background blue - tr name starts with CR-*/
+td[name^="SeR-"]{
+	background-color: #29313E  !important;
+}
+/*Table Row color background blue - tr name starts with SeR-*/
+td[name^="QR-"]{
+	background-color: #C5C5C5 !important;
+}
+/*Table Row color background blue - tr name starts with QR-*/
+div[name^="View-"]{
+	background-color: #FFFFFF !important;
+	opacity: 1 !important;
+}
+/*View Background white*/
+a.tab .tab-text{
+	font-size: 12px !important;
+	color: #FBE6C0 !important;
+	font-weight: bold !important;
+}
+/*tab text non-selected white*/
+a.tab.selected, a.tab.selected:hover{
+	background: #D04931 !important;
+	font-size: 14px !important;
+}
+
+/*color links: https://color.adobe.com/COLORES-color-theme-11978506/edit/?copy=true&base=2&rule=Custom&selected=0&name=Copy%20of%20COLORES&mode=rgb&rgbvalues=0.1607843137254902,0.19215686274509805,0.24313725490196078,0.1843137254901961,0.3333333333333333,0.403921568627451,1,0.796078431372549,0.24705882352941178,0.984313725490196,0.9019607843137255,0.7529411764705882,0.8156862745098039,0.28627450980392155,0.19215686274509805&swatchOrder=0,1,2,3,4 DARK BLUE: 29313E, Lt Blue 2F5567 Yellow: FFCB3F Tan: FBE6C0 Red: D04931*/

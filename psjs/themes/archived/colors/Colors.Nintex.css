@@ -1,0 +1,281 @@
+:root {
+    /*Theme Color Variables*/
+    --Primary: #FF6D00;
+    --Primary-Light: #A9CED5;
+    --Primary-Dark: #A9CED5;
+    --Primary-Very-Light: #e4f3fc;
+    --Secondary: #DBE0E3;
+    --Secondary-Light: #D4E6EA;
+    --Secondary-Dark: #cac2d5;
+    --On-Primary: #fff;
+    --On-Primary-Light: rgb(39, 133, 150);
+    --On-Primary-Dark: #fff;
+    --On-Secondary: #f5f5f5;
+    --On-Secondary-Light: #000;
+    --On-Secondary-Dark: #999;
+    --Background: #fcfcfd;
+    --Surface: #FFF;
+    --Error: red;
+    --Error-Light: coral;
+    --On-Background: rgb(78, 87, 88);
+    --On-Surface: #FF6D00;
+    --On-Error: white;
+    --On-Error-Light: #fff;
+    --Compliment: #81AF42;
+    --Compliment-Light: #45AA48;
+    --On-Compliment: #fff;
+    --On-Compliment-Light: #fff;
+    --Plain-Label-Color: rgb(78, 87, 88);
+    --Tab-Text-Color:white;
+    --Tab-Border-Color: #FF6D00;
+    --Button-Border-Color: transparent;
+    --Button-Background-Color: #FF6D00;
+    --Label-Text-Color-1: black;
+    --Immersion-Header-Presense-Background-Color: #FF6D00;
+    --Button-Hover-Background-Color: #D96004;
+    --Button-Hover-Text-Color: #1e3e61 !important;
+    --Quiet-Button-Hover-Text-Color: #1e3e61 !important;
+    --Button-Hover-Border-Color:#D96004;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text {
+    color: var(--Label-Text-Color-1);
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-text {
+    background-color: #D96004!important;
+    color:black!important;
+    border:none;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover{
+    border-bottom: none;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-text {
+    height:96%;
+    margin-top:-1px;
+}
+
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected, 
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper {
+    cursor: default;
+    border-bottom: 2px #FF6D00 solid;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-text {
+    opacity: 1;
+    color: #03161E;
+    cursor: default;
+}
+
+
+.theme-entry .sbm4k2 div.header {
+    background-color: #03161E!important;
+    padding-bottom:10px!important;
+}
+
+span[name="dl - temp logo"]>img {
+    width:150px!important;
+}
+
+.theme-entry .sbm4k2 div.header .editor-body-colgroup > col:first-child {
+    width:160px!important;
+}
+
+.theme-entry .sbm4k2 div.header h1.page-title,
+.theme-entry .sbm4k2 div.header .editor-cell h1.SourceCode-Forms-Controls-Web-Label {
+   color:#FF6D00!important;
+}
+
+.theme-entry .sbm4k2 div.header h2.page-subtitle,
+.theme-entry .sbm4k2 div.header .editor-cell .SourceCode-Forms-Controls-Web-Label {
+   color:white!important;
+}
+
+.theme-entry .grid .grid-column-headers-wrapper {
+    background-color:#FF6D00!important;
+}
+
+.theme-entry .grid>.grid-body, .theme-entry .panel>.panel-body {
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+
+.immersion-home .form>.row:first-child {
+    background-color:#03161E!important;
+}
+
+.immersion-home body.theme-entry{
+    background-color:#335572!important;
+}
+
+.immersion-home .sbm4k2 span[name="Organisation Logo Placeholder"] {
+    width: 100%;
+    text-align: right;
+    margin-top: 22px;
+}
+
+.immersion-home .sbm4k2 span[name="Current User Display Name"] {
+    color:aliceblue;
+}
+
+.immersion-home .theme-entry .runtime-form {
+    margin:0px;
+    padding:0px;
+}
+
+.immersion-home .runtime-content {
+    margin: 0px!important;
+}
+
+.immersion-home .form>.row:first-child {
+    background-color:#03161E!important;
+}
+
+.immersion-home .form>.row:first-child h1.page-title,
+.immersion-home .editor-cell h1.SourceCode-Forms-Controls-Web-Label {
+   color:#FF6D00!important;
+}
+
+.immersion-home .form>.row:first-child h2.page-subtitle,
+.immersion-home .editor-cell .SourceCode-Forms-Controls-Web-Label {
+   color:white!important;
+}
+ 
+.immersion-home .sbm4k2 .theme-entry label.input-control.radio .input-control-text,
+.immersion-home .mobile .sbm4k2 .theme-entry label.input-control.radio .input-control-text,
+.immersion-home .sbm4k2 .theme-entry label.input-control.checkbox .input-control-text,
+.immersion-home .mobile .sbm4k2 .theme-entry label.input-control.checkbox .input-control-text {
+    background-color: #FF6D00;
+    font-weight:bolder;
+    font-size:1.3rem;
+}
+
+.immersion-home .sbm4k2 .theme-entry label.input-control.radio .input-control-text:hover,
+.immersion-home .mobile .sbm4k2 .theme-entry label.input-control.radio .input-control-text:hover,
+.immersion-home .sbm4k2 .theme-entry label.input-control.checkbox .input-control-text:hover,
+.immersion-home .mobile .sbm4k2 .theme-entry label.input-control.checkbox .input-control-text:hover {
+    border-color: #D96004;
+    background-color: #D96004;
+    color:white;
+}
+
+.immersion-home .sbm4k2 .theme-entry label.input-control.radio.checked .input-control-text,
+.immersion-home .sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-text {
+    border-color: white;
+    background-color: #D96004;
+    color:white;
+}
+
+.immersion-home .sbm4k2 .grid .grid-body-content-wrapper {
+    background-color: white;
+}
+
+
+    /* Old variables from TryK2 Theme
+
+    ** common
+
+    --body-color: rgb(78, 87, 88); replaced by --Main-Text-Color (--On-Background)
+    --body-background-color: #fcfcfd; replaced by --Page-Background-Color (--Background)
+    --body-font-family: 'open_sanslight', sans-serif; replaced by --Main-Font-Family in variables
+    --paragraph-font-family: "open_sansregular", sans-serif; replaced by --Main-Font-Family-2
+    --selected-color: #1A5661; replaced by --Menu-Item-Highlight-Background-Color
+    --focused-color: #1A5661;replaced by --Menu-Item-Highlight-Background-Color
+    --active-color: white; replaced by --Menu-Item-Highlight-Background-Color
+    --hover-color: #288797; replaced by --Menu-Item-Hover-Background-Color
+    --readonly-color: #D4E6EA; replaced by --Input-Disabled-Text-Color
+    --disabled-color: D4E6EA; replaced by --Input-Disabled-Text-Color
+    --invalid-border-color: red; replaced by 
+
+    **inputs and labels
+
+    --Label-Text-Size: 1.2rem; replaced by number value
+    --data-label-text-size: 1.5rem; replaced by number value
+    --data-label-background-color: #f5f5f5; replaced by --Input-Disabled-Background-Color
+    --input-text-color: rgba(78, 87, 88, 1); replaced by --Input-Text-Color
+    --input-text-background-color: transparent;
+    --input-background-color: transparent; replaced by --Input-Background-Color
+    --input-text-font-family: 'open_sanslight', sans-serif; --Main-Font-Family in variables
+    --input-border-color: #cac2d5; replaced by --Input-Border-Color
+    --watermark-color: #999; replaced by --Input-Watermark-Text-Color
+    --watermark-font-family: 'open_sanslight', sans-serif; replaced by --Main-Font-Family in variables
+    
+    **headings
+
+    --h1-color: #288797; replaced by --Label-Text-Color-1
+    --h1-font-family: "open_sansregular", sans-serif; replaced by --Main-Font-Family-2
+    --h1-label-color: #288797; replaced by --Label-Text-Color-1
+    --h1-label-font-family: 'open_sanslight', sans-serif; replaced by --Main-Font-Family in variables
+    --h2-color: rgba(78, 87, 88, 1); replaced by --Input-Text-Color
+    --h2-font-family: "open_sansregular", sans-serif;replaced by --Main-Font-Family-2
+    --h2-label-color: #288797; replaced by --Label-Text-Color-1
+    --h3-label-font-family: "open_sansregular", sans-serif; replaced by --Main-Font-Family-2
+    --h3-label-color: #288797; replaced by --Label-Text-Color-1
+    --h2-label-font-family: "open_sansregular", sans-serif;
+    --h4-color: rgba(78, 87, 88, 1); replaced by --Plain-Label-Color
+    --h4-font-family: "open_sansregular", sans-serif;
+    ** header
+
+    --header-background-color: transparent;  replace with --Form-Background-Color
+    --fixed-header-background-color: #fcfcfd;
+    --header-presense-background-color: #81AF42;
+    --header-presense-color: #ffffff;
+
+    **grids
+
+    --grid-border-color: rgb(39, 133, 150); replaced by --List-Item-Border-Color
+    --grid-header-color: #288797;
+    --grid-header-font-family: "open_sansregular", sans-serif; replaced by --Main-Font-Family-2
+    --grid-column-header-background-color: rgba(39, 133, 150, 0.7); replaced by --List-Column-Header-Background-Color
+    --grid-column-header-text-color: #fff; replaced by --List-Header-Text-Color
+    --grid-column-header-font-family: "open_sansregular", sans-serif; replaced by --Main-Font-Family-2
+    --grid-row-alternate-background-color: rgba(39, 133, 150, 0.2); replaced by --List-Row-Background-Color-Odd-Zebra
+    --grid-row-hover-background-color: #1A5661; replace with --List-Row-Hover-Background-Color
+    --grid-row-hover-text-color: #fff; repalce with --List-Row-Selected-Text-Color
+    --grid-row-selected-background-color: #1A5661; replace with --List-Row-Selected-Background-Color
+    --grid-row-selected-text-color: #fff; replace with --List-Row-Selected-Text-Color
+    --filter-background-color: rgba(39, 133, 150, 0.2); --Panel-HeaderBar-Background-Color
+    --filter-border-color: rgb(39, 133, 150); --Panel-HeaderBar-Text-Color
+    
+    **tabs
+
+    --tabs-background-color: #288797;
+    --tab-color: white;
+    --tab-border: #A9CED5; replaced by --Tab-Border-Color
+    --tab-background-color: #A9CED5; replaced by --Tab-Background-Color
+    --tab-font-family: "open_sansregular", sans-serif; replaced by --Main-Font-Family-2
+    --tab-selected-color: #288797;
+    --tab-selected-background-color: #288797;
+    --tab-text-color: #288797; replaced by --Tab-Text-Color
+    
+    **buttons 
+
+    --button-background-color: #288797; replaced by --Button-Background-Color
+    --button-border-color: #288797; replaced by --Button-Border-Color
+    --button-text-color: #fff; replaced by --Button-Text-Color
+    --button-font-family: "open_sansregular", sans-serif; replaced by --Main-Font-Family-2
+    --button-focus-background-color: #288797; replaced by --Button-Focus-Background-Color
+    --button-focus-border-color: #288797; replaced by --Button-Focus-Border-Color
+    --button-active-background-color: #288797;
+    --button-active-border-color: #288797; replaced by --Button-Focus-Background-Color
+    --button-hover-background-color: white; replaced by --Button-Hover-Background-Color
+    --button-hover-text-color: #288797; replaced by --Quiet-Button-Hover-Text-Color
+    --button-hover-border-color: #288797; --Button-Hover-Border-Color
+
+    ** Application toolbar
+
+    --applicationtoolbar-button-background-color: #288797;
+    --applicationtoolbar-button-icon-background-color: #1A5661;
+    --applicationtoolbar-button-text-color: #fff;
+
+     **Pager
+     
+    --pager-progress-bar-background-color: #D7E9EC; --List-Item-Hover-Background-Color
+    --pager-progress-bar-foreground-color: #288797; --List-Item-Selected-Background-Color
+
+    */

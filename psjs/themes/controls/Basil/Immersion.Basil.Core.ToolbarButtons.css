@@ -1,0 +1,135 @@
+/*replace toolbar button icons styling*/
+
+.sbm4k2 .theme-entry a.toolbar-button.add .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.edit .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.delete .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.save .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.refresh .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.generic .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.delete-all .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.load .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.checkin .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.checkout .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.undocheckout .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.filter .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.pdfdocument .button-icon,
+.sbm4k2 .theme-entry a.toolbar-button.exceldocument .button-icon {
+    background-image: none !important;
+    padding-right: 20px;
+    border-bottom: 3px var(--Form-Background-Color) solid;
+}
+
+.sbm4k2 .theme-entry a.toolbar-button.add .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.edit .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.delete .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.save .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.refresh .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.generic .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.delete-all .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.load .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.checkin .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.checkout .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.undocheckout .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.filter .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.pdfdocument .button-icon:before,
+.sbm4k2 .theme-entry a.toolbar-button.exceldocument .button-icon:before  {
+    font-family: var(--SB-Toolbar-Icon-font, "Font Awesome 5 Free");
+    font-weight: 900;
+    color: var(--SB-Toolbar-Icon-Color, var(--Heading-Text-Color));
+    height: 100%;
+    position: relative;
+    font-size: var(--SB-Toolbar-Icon-Size, 2.25rem);
+    top: 0px;
+    border-bottom: 3px var(--Form-Background-Color) solid;
+
+}
+/*replace icons*/
+.sbm4k2 .theme-entry a.toolbar-button.add .button-icon:before {
+    content: var(--SB-Toolbar-Icon-add, "\f067");
+}
+.sbm4k2 .theme-entry a.toolbar-button.edit .button-icon:before {
+    content: var(--SB-Toolbar-Icon-edit, "\f044");
+}
+.sbm4k2 .theme-entry a.toolbar-button.delete .button-icon:before {
+    content: var(--SB-Toolbar-Icon-delete, "\f55a");
+}
+.sbm4k2 .theme-entry a.toolbar-button.save .button-icon:before {
+    content: var(--SB-Toolbar-Icon-save, "\f0c7");
+}
+.sbm4k2 .theme-entry a.toolbar-button.refresh .button-icon:before {
+    content: var(--SB-Toolbar-Icon-refresh, "\f2f1");
+}
+.sbm4k2 .theme-entry a.toolbar-button.generic .button-icon:before {
+    content: var(--SB-Toolbar-Icon-generic, "\f45c");
+}
+.sbm4k2 .theme-entry a.toolbar-button.delete-all .button-icon:before {
+    content: var(--SB-Toolbar-Icon-delete-all, "\f714");
+}
+.sbm4k2 .theme-entry a.toolbar-button.load .button-icon:before {
+    content: var(--SB-Toolbar-Icon-load, "\f110");
+}
+.sbm4k2 .theme-entry a.toolbar-button.checkin .button-icon:before {
+    content: var(--SB-Toolbar-Icon-checkin, "\f14a");
+}
+.sbm4k2 .theme-entry a.toolbar-button.checkout .button-icon:before {
+    content: var(--SB-Toolbar-Icon-checkout, "\f07a");
+}
+.sbm4k2 .theme-entry a.toolbar-button.undocheckout .button-icon:before {
+    content: var(--SB-Toolbar-Icon-undocheckout, "\f0e2");
+}
+.sbm4k2 .theme-entry a.toolbar-button.filter .button-icon:before {
+    content: var(--SB-Toolbar-Icon-filter, "\f0b0");
+}
+.sbm4k2 .theme-entry a.toolbar-button.pdfdocument .button-icon:before {
+    content: var(--SB-Toolbar-Icon-pdfdocument, "\f1c1"); 
+}
+.sbm4k2 .theme-entry a.toolbar-button.exceldocument .button-icon:before {
+    content: var(--SB-Toolbar-Icon-exceldocument, "\f1c3");
+}
+
+/*Hover elements controls and buttons*/
+
+.theme-entry a.toolbar-button span.button-text {
+    border-bottom: 3px var(--Form-Background-Color) solid;;
+}
+
+.theme-entry a.toolbar-button:hover .button-text, 
+.theme-entry a.toolbar-button span.button-c span.button-text:hover, 
+.theme-entry a.toolbar-button:focus .button-text, 
+.theme-entry a.toolbar-button span.button-c span.button-text:focus, 
+.theme-entry a.toolbar-button:active .button-text, 
+.theme-entry a.toolbar-button span.button-c span.button-text:active {
+    color: var(--Menu-Item-Hover-Background-Color);
+    background-color: var(--Form-Background-Color);
+    border-bottom: 3px var(--Menu-Item-Hover-Background-Color) solid;
+}
+
+
+.theme-entry .filterContainer a.refreshImg:hover, 
+.theme-entry .filterContainer a.refreshImg:focus, 
+.theme-entry .filterContainer a.configFilterImg:hover, 
+.theme-entry .filterContainer a.configFilterImg:focus, 
+.theme-entry .calendar-outline, .theme-entry a.toolbar-button:hover, 
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:hover, 
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:hover:focus, 
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:focus {
+    background-color: var(--Form-Background-Color);
+}
+
+.theme-entry a.toolbar-button span:hover, 
+.theme-entry a.toolbar-button.toolbar-button-inline span:hover, 
+.theme-entry a.toolbar-button span.button-c:hover, 
+.theme-entry .toolbars span:hover, 
+.theme-entry a.toolbar-button span.button-text:hover, 
+.theme-entry a.toolbar-button.toolbar-button-inline span.button-text:hover, 
+.theme-entry a.toolbar-button span.button-c.button-text:hover, 
+.theme-entry .toolbars span.button-text:hover {
+    background-color: var(--Form-Background-Color);
+}
+
+.theme-entry a.toolbar-button.selected, 
+.theme-entry a.toolbar-button:active, 
+.theme-entry a.toolbar-button:focus, 
+.theme-entry .grid .grid-footer .toolbars a.toolbar-button:active {
+    background-color: var(--Form-Background-Color);
+}

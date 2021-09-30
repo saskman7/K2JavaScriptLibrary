@@ -1,0 +1,28 @@
+:root {
+/*Theme Color Variables*/
+--Primary: #b1151d;
+--Primary-Light: #ea5045;
+--Primary-Dark: #7a0000;
+--Primary-Very-Light: #eceff1;
+--Secondary: #37474f;
+--Secondary-Light: #62727b;
+--Secondary-Dark: #102027;
+--On-Primary: #fff; 
+--On-Primary-Light: #000;
+--On-Primary-Dark: #fff;
+--On-Secondary: #fff;
+--On-Secondary-Light: #fff;
+--On-Secondary-Dark: #fff;
+--Background: #fff;
+--Surface: #fff;
+--Error: #b15b15;
+--Error-Light: #D9B159;
+--On-Background: #000;
+--On-Surface: #000;
+--On-Error: #fff;
+--On-Error-Light: #000;
+--Compliment: #15b1a9;
+--Compliment-Light: #a9ddda;
+--On-Compliment: #000;
+--On-Compliment-Light: #000;
+}

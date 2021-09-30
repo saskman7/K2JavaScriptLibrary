@@ -1,0 +1,56 @@
+/* Tree View Control */
+
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-ControlPack-TreeView {
+    border: 0;
+    border-radius: 3px;
+    padding-top: 16px;
+    padding-right: 15px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    box-shadow: 0 0 0 1px #cac2d5;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    width: calc(100% - 2px);
+    font-family: sans-serif;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected>.content>.header .text, 
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node>.content>.header .text:hover {
+    background-color: var(--Tree-Item-Selected-Background-Color);
+    color: var(--Tree-Item-Selected-Text-Color);
+    border: 3px var(--Tree-Item-Selected-Background-Color) solid;
+} /*added-04-15*/
+
+/* border box troubleshoot */
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.selected>.content>.header,
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node>.content:hover>.header {
+       background: transparent;
+       border: none;
+} 
+
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node .content span {
+    white-space: nowrap;
+}
+
+.theme-entry .sbm4k2 .SourceCode-Forms-Controls-Web-ControlPack-TreeView div.header {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry li.node.selectable.empty.populated, 
+.sbm4k2 .theme-entry li.node.selectable.collapsed.populated {
+    height: 2.5rem;
+}
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .tree-body>.node-container {
+    overflow:visible;
+}
+
+.SourceCode-Forms-Controls-Web-ControlPack-TreeView .node.expanded>.node-container {
+    white-space: initial;
+}
+
+/* END: Tree View Control */

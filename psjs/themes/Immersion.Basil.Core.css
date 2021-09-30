@@ -1,0 +1,126 @@
+/* page style */
+
+html {
+    font-size: var(--Main-Text-Size);
+}
+
+/*div {
+    background-color: var(--Form-Background-Color);
+}*/
+
+.sbm4k2 .theme-entry div {
+    box-shadow: none !important;
+    background-color: transparent /*var(--Form-Background-Color)*/;
+}
+
+body.sbm4k2 {
+    color: var(--Main-Text-Color);
+    background-color: var(--Form-Background-Color);
+    height: 100vh;
+    padding: 15px;
+}
+
+.sbm4k2 .theme-entry .form {
+    padding: 0px;
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry div {
+    font-family: var(--Main-Font-Family);
+}
+
+/*.sbm4k2 .runtime-content {
+    justify-content: center!important;
+}*/
+
+.sbm4k2 div.row {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sbm4k2 span,
+.sbm4k2.theme-entry span,
+.sbm4k2.theme-entry input[type=text] {
+    white-space: initial;
+} /*8-6-2020*/
+
+
+/*Main Fonts*/
+
+.theme-entry .sbm4k2 h1.page-title {
+    font-family: var(--SB-Title-Font, var(--Main-Font-Family));
+    font-weight: 600;
+    font-size: var(--SB-Title-Size, 3rem);
+    color: var(--SB-Title-Color, var(--Heading-Text-Color));
+}
+
+.sbm4k2 .theme-entry .SFC h2.page-subtitle {
+    font-family: var(--SB-Subtitle-Font, var(--Main-Font-Family));
+    font-weight: 400;
+    font-size: var(--SB-Subtitle-Size, 2.765rem);
+    color: var(--SB-Subtitle-Color, var(--Heading-Text-Color));
+}
+
+.sbm4k2 .theme-entry h1,
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text,
+.sbm4k2.theme-entry .panel-header-wrapper .panel-header-text {
+    font-family: var(--SB-H1-Font, var(--Main-Font-Family));
+    font-weight: 600;
+    font-size: var(--SB-H1-Size, 2.455rem);
+    color: var(--SB-H1-Color, var(--Heading-Text-Color));
+}
+
+.sbm4k2 .theme-entry h2 {
+    font-family: var(--SB-H2-Font, var(--Main-Font-Family));
+    font-weight: 600;
+    font-size: var(--SB-H2-Size, 2.125rem);
+    color: var(--SB-H2-Color, var(--Label-Text-Color-1));
+}
+.sbm4k2 .theme-entry h3 {
+    font-family: var(--SB-H3-Font, var(--Main-Font-Family));
+    font-weight: 500;
+    font-size: var(--SB-H3-Size, 1.75rem);
+    color: var(--SB-H3-Color, var(--Label-Text-Color-2));
+}
+
+.sbm4k2 .theme-entry h4 {
+    font-family: var(--SB-H4-Font, var(--Main-Font-Family-2));
+    font-weight: 700;
+    font-size: var(--SB-H4-Size, 1.5rem);
+    color: var(--SB-H4-Color, var(--Label-Text-Color-4));
+}
+
+.sbm4k2 .theme-entry p {
+    font-family: var(--SB-Paragraph-Font, var(--Main-Font-Family));
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--SB-Paragraph-Color, default);
+}
+
+.sbm4k2 .theme-entry label.input-label {
+    font-family: var(--SB-Input-Font, var(--Main-Font-Family-2));
+    font-weight: 500;
+    font-size: var(--SB-Input-Size, 1.5rem); 
+    text-transform: uppercase;
+    color: var(--SB-Input-Color, grey); 
+}
+
+.sbm4k2 .theme-entry p.description {
+    font-size: var(--SB-Description-Size, 1.25rem);
+    color: var(--SB-Description-Color, grey); 
+    font-family: var(--SB-Description-Font, var(--Main-Font-Family));
+}
+
+.sbm4k2 .theme-entry .view .innerpanel > .grid, 
+.sbm4k2 .theme-entry .view .innerpanel > .panel, 
+.sbm4k2 .theme-entry .view-canvas > .grid, 
+.sbm4k2 .theme-entry .view-canvas > .panel {
+    box-shadow: none; /*No dropshadows*/
+	position:relative;
+    margin:auto !important;
+    background-color: var(--Form-Background-Color);
+}
+/*May need to remove*/
+.theme-entry .view .innerpanel>.grid, .theme-entry .view .innerpanel>.panel, .theme-entry .view-canvas>.grid, .theme-entry .view-canvas>.panel {
+    box-shadow: none;
+}

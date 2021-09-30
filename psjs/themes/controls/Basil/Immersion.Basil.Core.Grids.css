@@ -1,0 +1,264 @@
+.sbm4k2 .theme-entry .grid-body {
+    /* border: 2px solid;*/
+     background-color: var(--View-Background-Color);
+     border-color: var(--View-Header-Border-Color);
+     border-radius: var(--View-Border-Radius);
+ }
+ .sbm4k2 .theme-entry .panel-header, 
+ .sbm4k2 .theme-entry .panel-header div,
+ .sbm4k2 .theme-entry .grid-header {
+ justify-content: center;
+ }
+ .sbm4k2 .theme-entry .grid-header-wrapper .grid-header-text, 
+ .sbm4k2 .theme-entry .panel-header-wrapper .panel-header-text, 
+ .sbm4k2 .theme-entry .grid-header-wrapper .grid-header-text>span, 
+ .sbm4k2 .theme-entry .panel-header-wrapper .panel-header-text>span {
+ color: var(--View-Header-Text-Color);
+ font-weight: 500;
+ background-color: var(--View-Header-Background-Color);
+ border-radius: var(--View-Border-Radius);
+ }
+
+/* replace true / false on grid columns with icons */
+
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='true']>span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='false']>span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover .grid-content-cell-wrapper[title='true']>span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover .grid-content-cell-wrapper[title='false']>span,
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='true']>span,
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='false']>span {
+    color: transparent !important;
+}
+
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='true']>span:before,
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='false']>span:before {
+    font-family: var(--SB-Toolbar-Icon-font, "Font Awesome 5 Free");
+    font-weight: 400;
+    height: 100%;
+    position: relative;
+    font-size: 1.5rem;
+    top: 2px;
+    text-align: center;
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='true']>span:before,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected .grid-content-cell-wrapper[title='false']>span:before {
+    color: var(--List-Row-Selected-Text-Color);
+}
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover .grid-content-cell-wrapper[title='true']>span:before,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover .grid-content-cell-wrapper[title='false']>span:before {
+    color: var(--List-Item-Selected-Text-Color-2);
+}
+
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='true']>span:before {
+    content: var(--SB-True-Icon, "\f058");
+    color: var(--SB-True-Icon-Color, var(--List-Row-Selected-Background-Color));
+}
+
+.sbm4k2 .theme-entry .grid .grid-content-cell-wrapper[title='false']>span:before {
+    content: var(--SB-False-Icon, "\f057");
+    color: var(--SB-False-Icon-Color, var(--List-Row-Hover-Background-Color));
+}
+
+
+
+/*Grid and list view style*/
+
+.sbm4k2 .theme-entry .double.toolbars .toolbar:first-child .toolbar-wrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .grid.with-header .grid-toolbars .toolbar-wrapper,
+.sbm4k2 .theme-entry .with-header.grid .grid-toolbars .double.toolbars .toolbar:first-child .toolbar-wrapper {
+    border: none;
+    border-bottom: 3px var(--View-Header-Border-Color) solid;
+}
+
+.sbm4k2 .grid-header {
+    border: none;
+	background-color: var(--View-Header-Background-Color);
+}
+.theme-entry .panel>.panel-body {
+    background-color: transparent;
+}
+
+.sbm4k2 .panel-header-wrapper .panel-header-text,
+.sbm4k2 .grid-header-wrapper .grid-header-text {
+    border-bottom: none;
+    padding: 0px;
+}
+
+.sbm4k2 .grid .grid-column-headers {
+    background-color: var(--List-Column-Header-Background-Color);
+}
+
+.sbm4k2 .theme-entry .grid-content-table tbody tr.highlighted>td {
+    border: none;
+}
+
+.sbm4k2 .grid .grid-column-headers div {
+    color: var(--List-Header-Text-Color-1);
+    font-weight: 600;
+    font-family: var(--Main-Font-Family-2);
+    font-size: 1.3rem;
+    text-transform: none;
+    /* padding-left: 2px;
+    padding-right: 2px; */
+}
+
+.sbm4k2 .toolbars.single .toolbar .toolbar-wrapper {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .toolbar {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .grid.with-header .grid-toolbars {
+    background-color: var(--Form-Background-Color);
+}
+.sbm4k2 .theme-entry .toolbar>.toolbar-wrapper>table>tbody>tr>td {
+    background-color: var(--Form-Background-Color);
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.sbm4k2 .theme-entry .grid.with-header .grid-toolbars .toolbar .filterContainer {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .grid .grid-body-content-wrapper {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even):not(.action-row) td {
+    background-color: var(--Form-Background-Color);
+}
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row) td {
+    background-color: var(--View-Header-Background-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table td.action-row a.action-row {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table td.action-row a.action-row > .input[type=text]:hover {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row):hover>td,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even):not(.action-row):hover>td,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover>td span,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr:hover td {
+    background-color: var(--List-Item-Hover-Background-Color);
+    color: var(--List-Item-Selected-Text-Color-2);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(odd):not(.action-row).selected>td,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr:nth-child(even):not(.action-row).selected>td,
+.sbm4k2 .theme-entry .grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td span {
+    background-color: var(--List-Row-Selected-Background-Color);
+    color: var(--List-Row-Selected-Text-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected:hover>td span,
+.sbm4k2 .theme-entry .grid table.grid-content-table tr.selected:hover {
+    background-color: var(--List-Row-Selected-Background-Color);
+    color: var(--List-Row-Selected-Text-Color);
+}
+
+.sbm4k2 .theme-entry .grid table.grid-content-table td.action-row a.action-row {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .grid-summary .grid-summary-item,
+.sbm4k2 .theme-entry .grid.with-summary .grid-summary {
+    background-color: var(--View-Header-Background-Color);
+}
+
+/*Mobile Screens*/
+
+@media screen and (max-width: 640px) {
+    .mobile .theme-entry .sbm4k2 li {
+        font-size: 1.3rem;
+    }
+    .mobile .theme-entry .sbm4k2 .panel-body-wrapper>div>table>tbody>tr {
+        display: initial!important;
+        width: initial!important;
+    }
+    .mobile .theme-entry .sbm4k2 .panel-body-wrapper>div>table>tbody>tr>td {
+        display: initial!important;
+        width: initial!important;
+    }
+    .mobile .theme-entry .sbm4k2 .editor-cell {
+        padding-left: 1px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .sbm4k2 .runtime-content .panel table,
+    .sbm4k2 .runtime-content .panel tr,
+    .sbm4k2 .runtime-content .panel td {
+        overflow-x: auto!important;
+        display: block;
+        width: auto!important;
+    }
+    .sbm4k2 .runtime-content .filterContainer,
+    .sbm4k2 .runtime-content .grid-toolbars {
+        /*overflow-x: none;
+        display: block;
+        
+        width: auto;*/
+        display: none;
+    }
+    .sbm4k2 .runtime-content .theme-entry h1,
+    .sbm4k2 .runtime-content .theme-entry h2,
+    .sbm4k2 .runtime-content .theme-entry h3,
+    .sbm4k2 .runtime-content .theme-entry h4 {
+        /* display: block; */
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    .sbm4k2 .runtime-content .panel-header-text,
+    .sbm4k2 .runtime-content .grid-header-text,
+    .sbm4k2.theme-entry .grid-header-wrapper .grid-header-text>span,
+    .sbm4k2.theme-entry .panel-header-wrapper .panel-header-text>span {
+        display: block;
+        text-align: center;
+        white-space: normal;
+    }
+    .sbm4k2 .runtime-content .theme-entry span.SourceCode-Forms-Controls-Web-Label,
+    .sbm4k2 .runtime-content .theme-entry .formcontrol div.innerpanel {
+        text-align: center;
+        width: 100%;
+    }
+    .sbm4k2 .runtime-content .theme-entry .SFC h4.SourceCode-Forms-Controls-Web-Label {
+        text-align: center;
+    }
+    .sbm4k2 .runtime-content .theme-entry .grid-column-headers {
+        display: none;
+    }
+    .sbm4k2 .runtime-content .theme-entry .grid-body table,
+    .sbm4k2 .runtime-content .theme-entry .grid-body tbody,
+    .sbm4k2 .runtime-content .theme-entry .grid-body tr,
+    .sbm4k2 .runtime-content .theme-entry .grid-body td {
+        overflow-x: auto!important;
+        display: block!important;
+        width: auto!important;
+        text-align: center;
+    }
+    .sbm4k2 .runtime-content .theme-entry .grid .grid-content-cell-wrapper,
+    .sbm4k2 .runtime-content .theme-entry .grid .grid-content-cell.numeric .grid-content-cell-wrapper {
+        text-align: center;
+    }
+    .sbm4k2 .theme-entry div.input-control.select-box {
+        width: calc(100% - 2px)!important;
+    }
+    .sbm4k2 .theme-entry .file-wrapper {
+        /* margin-bottom: 10px;
+        margin-top: 10px; */
+        width: calc(100% - 32px);
+    }
+}

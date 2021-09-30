@@ -1,0 +1,272 @@
+/* page style */
+
+html {
+    font-size: 11px;
+}
+
+body.sbm4k2 {
+    color: var(--Main-Text-Color);
+    background-color: var(--Page-Background-Color);
+    height: 100vh;
+}
+
+.sbm4k2 .theme-entry .form {
+    padding: 0px;
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry div {
+    font-family: var(--Main-Font-Family);
+}
+
+.sbm4k2 .runtime-content,
+.mobile .sbm4k2.theme-entry .runtime-content {
+    align-content: center!important;
+    margin-top: 20px!important;
+    margin-bottom: 0px!important;
+}
+
+
+/* standard text, borders, etc */
+
+.sbm4k2 * {
+    box-sizing: border-box;
+    font-family: var(--Main-Font-Family);
+}
+
+.sbm4k2 span,
+.sbm4k2.theme-entry span,
+.sbm4k2.theme-entry input[type=text] {
+    background-color: var(--Input-Background-Color);
+    font-family: var(--Main-Font-Family);
+    font-size: 1.2rem;
+    color: var(--Input-Text-Color);
+    /* 7-29-2020 */
+    /*white-space: pre-wrap;*/
+}
+
+.sbm4k2 .theme-entry .input-control .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box .input-control-buttons {
+    border: none;
+}
+
+.sbm4k2 .theme-entry .formcontrol span {
+    font-size: 1.2rem;
+}
+
+.theme-entry .sbm4k2 h1.page-title,
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-DataLabel {
+    font-family: var(--SB-Title-Font, var(--Main-Font-Family-2));
+    font-weight: bolder;
+    font-size: var(--SB-Title-Size, 2.2rem);
+}
+
+.theme-entry .sbm4k2 h1.page-title {
+    color: var(--SB-Title-Color, var(--Label-Text-Color-1));
+}
+
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-DataLabel {
+    color: var(--SB-Title-Color, var(--Label-Text-Color-1));
+}
+
+.theme-entry .sbm4k2 h2.page-subtitle,
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-DataLabel {
+    font-family: var(--SB-Subtitle-Font, var(--Main-Font-Family-2));
+    font-weight: normal;
+    font-size: var(--SB-Subtitle-Size, 1.7rem);
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.theme-entry .sbm4k2 h2.page-subtitle {
+    color: var(--SB-Subtitle-Color, var(--Input-Text-Color));
+}
+
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-DataLabel {
+    color: var(--SB-Subtitle-Color, var(--Label-Text-Color-1));
+}
+
+.sbm4k2 .theme-entry h1,
+.sbm4k2 .theme-entry h2,
+.sbm4k2 .theme-entry h3,
+.sbm4k2 .theme-entry h4 {
+    opacity: 1.0;
+    transition: opacity 1.0s ease-in-out;
+    transition-delay: 1.5s;
+}
+
+.sbm4k2.theme-entry .panel-header-wrapper {
+    border-bottom: 1px var(--Panel-Border-Color) solid;
+}
+
+.sbm4k2.theme-entry .grid-header-wrapper {
+    border-bottom: none;
+}
+
+.sbm4k2 .theme-entry h1,
+.sbm4k2 .theme-entry .SFC h1.SourceCode-Forms-Controls-Web-DataLabel,
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text,
+.sbm4k2.theme-entry .panel-header-wrapper .panel-header-text {
+    font-family: var(--SB-H1-Font, var(--Main-Font-Family-2));
+    font-weight: bolder;
+    font-size: var(--SB-H1-Size, 2rem);
+}
+
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text {
+    color: var(--List-Item-Border-Color);
+}
+
+.sbm4k2.theme-entry .panel-header-wrapper .panel-header-text {
+    color: var(--Label-Text-Color-1);
+}
+
+.sbm4k2 .theme-entry h2 {
+    font-family: var(--SB-H2-Font, var(--Main-Font-Family-2));
+    font-weight: normal;
+    font-size: var(--SB-H2-Size, 1.7rem);
+    color: var(--SB-H2-Color, var(--Label-Text-Color-2));
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.sbm4k2 .theme-entry h4 {
+    font-weight: normal;
+    font-family: var(--h4-font-family);
+    font-size: var(--SB-H4-Size, 1.5rem);
+    color: var(--SB-H4-Color, var(--Plain-Label-Color));
+    padding-top: 15px;
+}
+
+.sbm4k2 .theme-entry p {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--SB-Paragraph-Font, var(--Main-Font-Family-2));
+}
+
+.sbm4k2 .theme-entry .SFC h1.SourceCode-Forms-Controls-Web-DataLabel,
+.sbm4k2 .theme-entry .SFC h2.SourceCode-Forms-Controls-Web-DataLabel,
+.sbm4k2 .theme-entry .SFC h3.SourceCode-Forms-Controls-Web-DataLabel,
+.sbm4k2 .theme-entry .SFC h4.SourceCode-Forms-Controls-Web-DataLabel {
+    background-color: var(--Form-Background-Color);
+    border: none;
+    box-shadow: none;
+    padding-left: 0px;
+}
+
+.sbm4k2 .theme-entry .SFC h1.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h1.SourceCode-Forms-Controls-Web-DataLabel {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--Label-Text-Color-1);
+    font-family: var(--Main-Font-Family);
+    padding-top: 10px;
+}
+
+.sbm4k2 .theme-entry .SFC h2.SourceCode-Forms-Controls-Web-Label {
+    font-size: 16px;
+    text-transform: none;
+    color: var(--Label-Text-Color-1);
+    font-family: var(--Main-Font-Family-2);
+    padding-top: 0px;
+}
+
+.sbm4k2 .theme-entry .SFC h3.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h3.SourceCode-Forms-Controls-Web-DataLabel {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--Label-Text-Color-1);
+    font-family: var(--Main-Font-Family-2);
+    padding-top: 10px;
+}
+
+.sbm4k2 .theme-entry label.input-label {
+    font-family: var(--Main-Font-Family-2);
+    text-transform: none;
+}
+
+.sbm4k2 tr,
+td,
+table {
+    border: none;
+    border-bottom: none;
+    padding: 0px;
+}
+
+
+@media screen and (max-width: 640px) {
+    .mobile .theme-entry .sbm4k2 li {
+        font-size: 1.3rem;
+    }
+    .mobile .theme-entry .sbm4k2 .panel-body-wrapper>div>table>tbody>tr {
+        display: initial!important;
+        width: initial!important;
+    }
+    .mobile .theme-entry .sbm4k2 .panel-body-wrapper>div>table>tbody>tr>td {
+        display: initial!important;
+        width: initial!important;
+    }
+    .mobile .theme-entry .sbm4k2 .editor-cell {
+        padding-left: 1px;
+        padding-top: 2px;
+        padding-right: 0px;
+        padding-bottom: 2px;
+    }
+    .sbm4k2 .runtime-content .panel table,
+    .sbm4k2 .runtime-content .panel tr,
+    .sbm4k2 .runtime-content .panel td {
+        overflow-x: auto!important;
+        display: block;
+        width: auto!important;
+    }
+    .sbm4k2 .runtime-content .filterContainer,
+    .sbm4k2 .runtime-content .grid-toolbars {
+        /*overflow-x: none;
+        display: block;
+        
+        width: auto;*/
+        display: none;
+    }
+    .sbm4k2 .runtime-content .theme-entry h1,
+    .sbm4k2 .runtime-content .theme-entry h2,
+    .sbm4k2 .runtime-content .theme-entry h3,
+    .sbm4k2 .runtime-content .theme-entry h4 {
+        /* display: block; */
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    .sbm4k2 .runtime-content .panel-header-text,
+    .sbm4k2 .runtime-content .grid-header-text,
+    .sbm4k2.theme-entry .grid-header-wrapper .grid-header-text>span,
+    .sbm4k2.theme-entry .panel-header-wrapper .panel-header-text>span {
+        display: block;
+        text-align: center;
+        white-space: normal;
+    }
+    .sbm4k2 .runtime-content .theme-entry span.SourceCode-Forms-Controls-Web-Label,
+    .sbm4k2 .runtime-content .theme-entry .formcontrol div.innerpanel {
+        text-align: center;
+        width: 100%;
+    }
+    .sbm4k2 .runtime-content .theme-entry .SFC h4.SourceCode-Forms-Controls-Web-Label {
+        text-align: center;
+    }
+    
+    .sbm4k2 .theme-entry div.input-control.select-box {
+        width: calc(100% - 2px)!important;
+    }
+    .sbm4k2 .theme-entry .file-wrapper {
+        /* margin-bottom: 10px;
+        margin-top: 10px; */
+        width: calc(100% - 32px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sbm4k2 .runtime-content .panel table[name="Table Debug"] {
+        display: none!important;
+    }
+}

@@ -1,0 +1,5 @@
+/*x on subviews/forms*/
+.theme-entry .popup-header-button-bar /*.sbm4k2 tag does not exist on this element*/{
+    overflow: visible;
+    width: 60px;
+}

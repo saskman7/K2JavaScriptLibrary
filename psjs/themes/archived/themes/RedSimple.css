@@ -1,0 +1,87 @@
+.theme-entry, .theme-entry div, .theme-entry span, .theme-entry td, .theme-entry li, .theme-entry p, .theme-entry textarea, .theme-entry input[type='text'], .theme-entry input.text, .theme-entry select, .theme-entry option {
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-size: 12pt;
+}
+.theme-entry h1 {
+    font-family: "Open Sans Light","Segoe UI Semi-Light","Helvetica Light",sans-serif;
+    font-size: 3.2rem;
+    color: red;
+}
+.theme-entry label.input-label {
+    font-family: "Open Sans","Segoe UI Regular","Helvetica",sans-serif;
+    font-size: 1.4rem;
+	padding-left: 10px;
+    /*color: #ad900c;
+    text-transform: uppercase;*/
+} /*Overwrite default Input Label style*/
+body {
+    background-image: url('https://k2nats.blob.core.windows.net/css-files/Brick-Wall.jpg') !important;
+    background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-attachment: fixed;
+    background-color: #ffffff !important;
+}
+.theme-entry .dialog {
+  box-shadow: none;
+  position: absolute;
+  background-color: #ffffff !important;
+  /*above any other z-indexes, like the paging control*/
+
+}
+[name^='Transparent']>.panel-body {
+        background-color: transparent !important;
+
+    }
+.theme-entry .grid-header-wrapper .grid-header-text, .theme-entry .panel-header-wrapper .panel-header-text {
+    height: 2.6rem;
+    font-size: 1.6rem;
+	font-weight: bold;
+    line-height: 2.4rem;
+    border-bottom: solid 3px #A83426;
+	background: #e3e7ea/*#f6f6f6 #dae1fb*/;
+}
+.theme-entry .grid-header-wrapper .grid-header-text>span, .theme-entry .panel-header-wrapper .panel-header-text>span {
+    color: #A83426;
+}
+
+.theme-entry .view .innerpanel > .grid, .theme-entry .view .innerpanel > .panel, .theme-entry .view-canvas > .grid, .theme-entry .view-canvas > .panel {
+    box-shadow: none; /*No dropshadows*/
+	position:relative;
+	margin:auto !important;
+}
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox.watermark, .theme-entry .input-control-watermark {
+    font-size: 12pt !important;
+}
+.theme-entry .input-control.watermark a.input-control, .theme-entry .input-control.watermark a.input-control span {
+    font-size: 12pt !important;
+}
+/*Base Tab Text*/
+a.tab .tab-text{
+	font-size: 14px !important;
+	color: #FFFFFF !important;
+	font-weight: bold !important;
+}
+
+/*Active Tab Text*/
+a.tab.selected .tab-text {
+	font-size: 14px !important;
+	font-weight: bold !important;
+	color: #A83426 !important;
+}
+
+/*Tab background on hover*/
+a.tab:hover{
+    background: #4fa3c0 !important; 
+}
+/*Selected tab text hover color*/
+a.tab.selected .tab-text:hover {
+	color: #FFFFFF !important;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab.selected {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+.theme-entry .tab-box ul.tab-box-tabs a.tab:hover {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}

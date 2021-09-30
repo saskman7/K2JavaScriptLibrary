@@ -1,0 +1,499 @@
+:root {
+
+/*Start Background*/
+
+/* TO-Do - Figure out what UD colors are
+--UD-Background-Color-1: #fff;
+--UD-Background-Color-2: #fff;
+--UD-Background-Color-3: #fff;
+--UD-Highlight-Color: #fff;
+--UD-Text-Color: #fff; 
+*/
+
+/*End Background*/
+
+
+/*Main Form Settings*/
+
+/*Main font family > Heading font family, body font family*/
+--Main-Font-Family: var(--SB-Main-Font-Family, 'Montserrat',Helvetica,Arial,sans-serif);
+--Main-Font-Family-2: var(--SB-Main-Font-Family-2, 'Lekton',Georgia, serif);
+--Main-Text-Color: var(--Plain-Label-Color);
+--Main-Text-Size: 14px;
+--Heading-Text-Color: var(--Primary);
+--Form-Background-Color: var(--Background);/*Usually Transparent #fff0*/
+--Form-Background-Color-2: var(--Primary); 
+/*--Form-Highlight-Border-Color: ;*/
+
+/*Not Used
+
+--Page-Background-Color: ;
+--Page-Background-Color-1: ; used for gradient fill
+--Page-Background-Color-2: ; used for gradient fill
+
+*/
+
+/*End Main Form Settings*/
+
+/*Start Buttons*/
+--Button-Border-Color: var(--Primary);
+
+/* Not used
+--Button-Border-Color-2: ;
+--Button-Border-Color-3: ;
+--Button-Border-Color-4: ;
+--Button-Border-Color-5: ;
+--Button-Border-Color-6: ;
+--Button-Border-Color-7: ;
+--Button-Border-Color-8: ;
+--Button-Border-Color-9: ;   */
+
+ --Button-Focus-Background-Color: var(--Secondary);
+ --Button-Focus-Border-Color: var(--Secondary);
+ --Button-Hover-Background-Color: var(--Background);
+ --Button-Hover-Background-Color-3: ;
+ --Button-Hover-Border-Color: var(--Secondary);
+ --Button-Text-Color: var(--Primary);
+ --Button-Text-Color-2: var(--On-Secondary-Light);
+ --Button-Disabled-Text-Color: var(--Primary-Very-Light);
+ --Button-Disabled-Background-Color: var(--Primary-Dark);
+ --Button-Focus-Text-Color:var(--On-Secondary);
+
+ /* Not Used 
+--Button-Focus-Text-Color: ;
+--Button-Focus-Shadow-Color: ;
+--Button-Disabled-Text-Color: ;
+--Button-Disabled-Background-Color: ;
+--Button-Disabled-Border-Color: ;   */
+
+--Button-Background-Color: var(--Background);
+--Button-Background-Color-1: var(--Primary);
+--Primary-Button-Background-Color: var(--Background);
+--Primary-Button-Border-Color: var(--Primary-Dark);
+--Primary-Button-Text-Color: var(--Primary-Dark);
+--Primary-Button-Hover-Background-Color: var(--Background);
+--Primary-Button-Hover-Border-Color: var(--Secondary);
+--Primary-Button-Focus-Border-Color: var(--Primary);
+--Primary-Button-Focus-Background-Color: var(--Primary-Dark);
+--Quiet-Button-Background-Color: var(--background);
+--Quiet-Button-Border-Color: var(--Primary-Light);
+--Quiet-Button-Text-Color: var(--Primary-Light);
+--Quiet-Button-Hover-Background-Color: var(--Secondary-Light);
+--Quiet-Button-Hover-Border-Color: var(--Secondary-Light);
+--Quiet-Button-Hover-Text-Color: var(--On-Secondary-Light);
+--Quiet-Button-Focus-Border-Color: var(--Secondary-Light);
+--Destructive-Button-Background-Color: var(--Background);
+--Destructive-Button-Border-Color: var(--Secondary-Light);
+--Button-Border-Radius: var(--SB-Button-Border-Radius, 0px);
+
+/* Not Used 
+
+--Button-Background-Color-2: ;
+--Button-Background-Color-3: ;
+--Button-Background-Color-4: ;
+--Button-Background-Color-5: ;
+--Button-Background-Color-6: ;
+--Button-Secondary-Background-Color: ;
+--Button-Quiet-Background-Color: ;
+--Button-Tertiary-Background-Color: ;
+--Button-Error-Backgound-Color: ;
+--Button-Error-Hover-Background-Color: ;  */
+
+/*End Buttons*/
+
+/*Start Tabs*/
+
+--Tab-Text-Color: var(--Primary);
+--Tab-Background-Color: var(--Background);
+--Tab-Text-Selected-Color: var(--Primary);
+--Tab-Hover-Text-Color: var(--Secondary);
+--Tab-Selected-Background-Color: var(--Background);
+--Tab-Hover-Background-Color: var(--Background);
+--Tab-Disabled-Background-Color: var(--Background);
+--Tab-Bar-Border-Color: var(--Primary);
+--Tab-Disabled-Text-Color: var(--Primary-Light) ;
+
+
+/*Not Used 
+
+--Tab-Text-Color-2: ;
+--Tab-Text-Selected-Color-2: ;
+--Tab-Hover-Text-Color-2: ;
+--Tab-Disabled-Text-Color: ;
+--Tab-Disabled-Text-Color-2: ;
+--Tab-Selected-Border-Color: ;
+--Tab-File-Background-Color: ;
+--Tab-Body-Background-Color: ;
+--Tab-Bar-Background-Color: ;
+--Tab-Border-Color-2: ;
+--Tab-Border-Selected-Color-2: ;
+--Tab-Border-Hover-Color-2: ;
+--Tab-Border-Focus-Color-2: ;
+--Tab-Border-Disabled-Color-2: ;
+
+*/
+
+/*Original Tabs*/
+
+/* tabs 
+--tabs-background-color: var(--Secondary);
+--tab-color: var(--Surface);
+--tab-border: var(--Secondary);
+--tab-background-color: var(--On-Surface);
+--tab-font-family: Helvetica,Arial,sans-serif;;
+--tab-selected-color: var(--On-Secondary-Dark);
+--tab-hover-background-color: var(--On-Secondary-Dark);
+--tab-selected-background-color: var(--Secondary);
+--tab-text-color: var(--On-Primary-Dark);
+--tab-selected-text-color: var(--Primary-Dark);
+*/
+
+
+
+/*End Tabs*/
+
+/*Start Labels*/
+
+--Label-Text-Color-1: var(--Primary-Dark);
+--Label-Text-Color-2: var(--Secondary);
+--Label-Text-Color-3: var(--Primary-Light);
+--Label-Text-Color-4: var(--Plain-Label-Color);
+--Label-Hover-Text-Color-1: var(--Secondary-Dark);
+
+/* Not used
+--Label-Hover-Text-Color-2: ;
+--Label-Focus-Text-Color-1: ;
+--Label-Selected-Text-Color-1: 
+
+*/
+
+/*End Labels*/
+
+/*Start Views*/ /*Don't Use PANEL!!!*/
+
+--View-Background-Color: var(--Background);
+--View-Shadow: var(--On-Background);
+--View-Header-Text-Color: var(--Secondary);
+--View-Header-Text-Color-2: var(--On-Primary);
+--View-Header-Text-Shadow: var(--On-Background);
+--View-Header-Background-Color: var(--Primary-Very-Light);
+--View-Header-Border-Color: var(--Primary-Light);
+--View-Border-Radius: 0px;
+
+/* Not Used
+  --View-Border-Radius-Top: ;
+  --View-Border-Radius-Bottom: ;  */
+
+/*Original View Variables*/
+
+/*End Views*/
+
+/*Start List & Grid*/
+
+--List-Column-Header-Background-Color: var(--Primary-Dark);
+--List-Row-Selected-Background-Color: var(--Primary);
+--List-Row-Selected-Text-Color: var(--On-Primary);
+--List-Row-Hover-Background-Color: var(--Secondary);
+--List-Item-Selected-Text-Color: var(--On-Secondary);
+--List-Item-Selected-Text-Color-2: var(--On-Secondary);
+--List-Item-Selected-Background-Color: var(--Secondary);
+--List-Footer-Inset-Shadow-Color: var(--On-Secondary);
+--List-Row-Background-Color-Odd-Zebra: var(--Primary-Very-Light);
+--List-Row-Background-Color-Even-Zebra: var(--On-Primary);
+--List-Action-Button-Background-Color: var(--Primary-Very-Light);
+--Panel-HeaderBar-Background-Color: var(--Primary-Dark);
+--Panel-HeaderBar-Text-Color: var(--OnPrimary-Dark);
+--List-Column-Header-Text-Color: var(--Secondary-Dark);
+--List-Header-Text-Color-1: var(--On-Primary-Dark);
+--List-Item-Hover-Background-Color: var(--Secondary);
+
+/* Not used
+
+--List-Item-Hover-Background-Color-2: ;
+--List-Item-Hover-Background-Color-3: ;
+--List-Item-Focus-Border-Color: ;
+--List-Item-Border-Color-2: ;
+--List-Item-Error-Border-Color: ;
+--List-Item-Hover-Border-Color: ;
+--List-Item-Hover-Border-Color-2: ;
+--List-Item-Selected-Border-Color: ;
+--List-Item-DragOver-Border-Color: ;
+--List-Item-Text-Color: ; 
+--List-Column-Header-Border-Color: ;
+--List-Column-Header-Divider-Color: ;
+--List-Column-Header-Focus-Border-Color: ;
+--List-Header-Text-Color-1: ;
+--List-Paging-Item-Text-Color: ;
+--List-Add-Row-Background-Color: ;
+--List-More-Button-Text-Color: ;
+--List-Background-Color: ;
+--List-Item-Description-Text-Color: ;
+--List-Action-Button-Text-Color: ;
+--List-Action-Button-Hover-Background-Color: ;
+--List-Action-Button-Hover-Background-Color-2: ;
+--List-Action-Button-Hover-Text-Color: ;
+--Panel-Background-Color: ;
+--Panel-Empty-Background-Color: ;
+--Panel-Border-Color: ;
+--Panel-Border-Color-2: ;
+--Panel-Background-Color-2: ;
+--Panel-Separator-Line-Color: ;
+--Panel-Separator-Line-Color-Dark: ;
+--Panel-HeaderBar-Description-Text-Color: ;
+--Panel-HeaderBar-Toolbar-Button-Background-Color: ;
+--Panel-HeaderBar-Toolbar-Button-Hover-Background-Color: ;
+--Panel-HeaderBar-Toolbar-Button-Selected-Background-Color: ;
+--Panel-HeaderBar-Toolbar-Button-Focus-Border-Color: ;
+
+*/
+
+/*End List*/
+
+/*Toolbar*/
+
+--Toolbar-Border-Color: var(--Primary);
+--Toolbar-Button-Text-Color: var(--Primary);
+--Toolbar-Button-Background-Color: var(--Background);
+--Toolbar-Button-Hover-Background-Color: var(--Primary-Very-Light);
+
+/*Not Used 
+
+--Toolbar-Background-Color: ;
+--Toolbar-Separator-Line-Color: ;
+--Toolbar-Text-Color: ;
+--Toolbar-Button-Divider-Border: ;
+--Toolbar-Button-Toggle-Background-Color: ;
+--Toolbar-Button-Focus-Background-Color: ;
+--Toolbar-Button-Focus-Border-Color: ;
+--Toolbar-Button-Disabled-Text-Color: ;
+
+*/
+
+/*End Tool Bar*/
+
+/*Start Menu*/
+
+--Menu-Background-Color: var(--Background);
+--Menu-Border-Color: var(--Secondary);
+--Menu-Shadow: var(--On-Secondary);
+--Menu-Item-Text-Color: var(--On-Secondary);
+--Menu-Item-Highlight-Text-Color: var(--On-Primary);
+--Menu-Item-Highlight-Background-Color: var(--Primary);
+--Menu-Item-Hover-Background-Color: var(--Secondary);
+--Menu-Item-Hover-Background-Color-2: var(--Primary);
+--Menu-Item-Hover-Text-Color: var(--On-Secondary);
+--Menu-Item-Separator-Line-Color: var(--On-Primary-Light);
+
+/*End Menu*/
+
+/*Input Controls*/
+
+--Input-Background-Color: transparent;
+--Input-Text-Color: var(--Primary);
+--Input-Disabled-Text-Color: var(--Primary-Light);
+--Input-Disabled-Background-Color: var(--Primary-Very-Light);
+--Input-Border-Color: var(--Primary);
+--Input-Hover-Border-Color: var(--Secondary-Dark);
+--Input-Disabled-Border-Color: var(--Primary-Light);
+--Input-Error-Inactive-Border-Color: var(--Primary-Light);
+--Input-Error-Border-Color: var(--Error);
+--Input-Error-Text-Color: var(--Error);
+
+/* Input controls not in use
+
+--Input-Error-Background-Color: ;
+--Input-Watermark-Text-Color: ;
+--Input-Error-Watermark-Text-Color: ;
+--Input-Error-Background-Color: ;
+--Input-Error-Border-Color: ;
+--Input-Text-Highlight-Background-Color: ;
+--Input-Text-Highlight-Text-Color: ;
+--Input-Highlight-Border: ;
+--Input-Focus-Border-Color: ;
+--Input-Button-Text-color: ;
+--Input-Button-Hover-Background-color: ;
+--Input-Button-Hover-Text-color: ;
+--Input-Button-Focus-Background-color: ;
+--Input-Label-Text-Color: ;
+--Input-Label-Disabled-Text-Color: ;
+
+*/
+
+/*End Input Controls*/
+
+/*TreeView*/
+
+--Tree-Item-Selected-Background-Color: var(--Primary);
+--Tree-Item-Selected-Text-Color: var(--On-Primary);
+--Tree-Item-Selected-Border-Color: var(--Primary);
+
+/*End TreeView*/
+
+/*Start Calendar*/
+
+--Calendar-Selected-Item-Background-Color: var(--Secondary);
+--Calendar-Selected-Item-Text-Color: var(--On-Secondary);
+--Calendar-Date-Hover-Background-Color: var(--Primary);
+--Calendar-Date-Hover-Text-Color: var(--On-Primary);
+
+/*Not in use Calendar 
+
+--Calendar-Background-Color: ;
+--Calendar-Text-Color: ;
+--Calendar-Today-Background-Color: ;
+--Calendar-Today-Border-Color: ;
+--Calendar-Today-Text-Color: ;
+--Calendar-Item-Text-Color: ;
+--Calendar-Item-Disabled-Text-Color: ;
+--Calendar-Item-Hover-Text-Color: ;
+--Calendar-Item-Hover-Background-Color: ;
+--Calendar-Date-Hover-Background-Color: ;
+--Calendar-Date-Hover-Text-Color: ;
+--Calendar-Item-Separator-Border-Color: ;
+--Calendar-Item-Border-Radius: ;
+--Calendar-Day-Header-Text-Color: ;
+--Calendar-Shadow: ;
+--Calendar-Navigation-Button-Background-Color: ;
+--Calendar-Navigation-Button-Hover-Background-Color: ;
+--Calendar-Navigation-Button-Hover-Text-Color: 
+--Calendar-Selected-Item-Border-Color: ;
+
+*/
+
+/*End Calendar*/
+
+/* Not in Use - core variables
+
+--Dialog-Background-Color: ;
+--Dialog-Shadow: ;
+--Dialog-Header-Background-Color: ;
+--Dialog-Footer-Background-Color: ;
+--Dialog-Header-Border-Color: ;
+--Dialog-Footer-Border-Color: ;
+--Desktop-Background-Color: ;
+--Droppable-Control-Empty-Border-Color: ;
+--Droppable-Control-Empty-Hover-Border-Color: ;
+--Row-Arrow-Menu-Selected-Background-Color: ;
+--Row-Arrow-Menu-Background-Color: ;
+--SmartField-Background-Color: ;
+--SmartField-Text-Color: ;
+--Pill-Background-Color: ;
+--Pill-Text-Color: ;
+--Slider-Handle-Background-Color: ;
+--Slider-Handle-Background-Color-1: ;
+--Slider-Handle-Background-Color-2: ;
+--Slider-Handle-Shadow: ;
+--Slider-Handle-Hover-Background-Color: ;
+--Slider-Handle-Disabled-Background-Color: ;
+--Slider-Handle-Disabled-Border-Color: ;
+--Slider-Handle-Hover-Background-Color: ;
+--Slider-Handle-Hover-Border-Color: ;
+--Slider-Handle-Focus-Background-Color: ;
+--Slider-Handle-Focus-Border-Color: ;
+--Slider-Handle-In-Selected-Hover-Border-Color: ;
+--Slider-Rail-Border: ;
+--Slider-Rail-Background-Color: ;
+--Slider-Border-Color: ;
+--File-Upload-Border-Color: ;
+--File-Upload-Text-Color: ;
+--File-Upload-Background-Color: ;
+--File-Upload-Hover-Background-Color: ;
+--File-Upload-Hover-Border-Color: ;
+--File-Upload-Hover-Text-Color: ;
+--File-Upload-Disabled-Border-Color: ;
+--File-Upload-Disabled-Background-Color: ;
+--File-Upload-Disabled-Text-Color: ;
+--Label-Text-Color-1: ;
+--Label-Text-Color-2: ;
+--Label-Text-Color-3: ;
+--Label-Text-Color-4: ;
+--Label-Hover-Text-Color-1: ;
+--Label-Hover-Text-Color-2: ;
+--Label-Focus-Text-Color-1: ;
+--Label-Selected-Text-Color-1: ;
+--Icon-Button-Hover-Background-Color-2: ;
+--Icon-Button-Hover-Background-Color: ;
+--Content-Background-Color: ;
+--Content-Background-Color-2: ;
+--Chart-Title-Text-Color: ;
+--Grid-Summary-Row-Background-Color: ;
+--Grid-Summary-Row-Separator-Line-Color: ;
+--Tooltip-Border-Color: ;
+--Tooltip-Background-Color: ;
+--Tooltip-Text-Color: ;
+--Tooltip-Error-Background-Color: ;
+--Tooltip-Error-Border-Color: ;
+--Tooltip-Error-Text-Color: ;
+--Tooltip-Shadow: ;
+--Block-Selected-Background-Color: ;
+--Tile-Background-Color: ;
+--Tile-Hover-Background-Color: ;  
+--Hyperlink-Text-Color: ;
+--Hyperlink-Disabled-Text-Color: ;
+--Hyperlink-Error-Text-Color: ;
+--Hyperlink-2-Color: ;
+--Hyperlink-2-Hover-Background-Color: ;
+--Hyperlink-2-Hover-Text-Color: ;
+--Hyperlink-3-Text-Color: ;
+--Hyperlink-3-Color: ;
+--Hyperlink-3-Hover-Background-Color: ;
+--Hyperlink-3-Hover-Text-Color: ;
+--Message-Box-Content-Title: ;
+--Context-Browser-Tree-Item: ;
+--Mode-Button-Text-Color: ;
+--Attach-Hover-Background-Color: ;
+--Progress-Bar-Content-Background-Color: ;
+--Tag-Text-Color: ;
+--Tag-Attached-Text-Color: ;
+--Tag-Attached-Text-Color-2: ;
+--Tag-Background-Color: ;
+--Tag-Hover-Background-Color: ;
+--Tag-Attached-Focus-Background-Color: ;
+--Tag-Attached-Background-Color: ;
+--Tag-Attached-Hover-Background-Color: ;
+--Tag-Attached-Hover-Focus-Background-Color: ;
+--Tag-Border-Color: ;
+--Tag-Focus-Border-Color: ;
+--Control-Dropdown-Shadow: ;
+--Control-Shadow: ;
+--Tab-Text-Color: ;
+--Tab-Selected-Text-Color: ;
+--Badge-Error-Background-Color: ;
+--Badge-Warning-Background-Color: ;
+--Badge-Warning-Hover-Background-Color: ;
+--Search-Highlight-Background-Color: ;
+--Search-Highlight-Background-Color-1: ;
+--Search-Highlight-Background-Color-2: ;
+--Search-Highlight-Text-Color: ;
+--Help-Button-Background-Color: ;
+--Help-Button-Focus-Background-Color: ;
+--Help-Button-Focus-Border-Color: ;
+--Error-Text-Color: ;
+--Chart-Series-0: ;
+--Chart-Series-1: ;
+--Chart-Series-2: ;
+--Chart-Series-3: ;
+--Chart-Series-4: ;
+--Chart-Series-5: ;
+--Chart-Series-6: ;
+--Chart-Series-7: ;
+--Chart-Series-8: ;
+--Chart-Series-9: ;
+--Chart-Series-10: ;
+--Chart-Series-11: ;
+--Line-Series-0: ;
+--Line-Series-1: ;
+--Line-Series-2: ;
+--Line-Series-3: ;
+--Line-Series-4: ;
+--Line-Series-5: ;
+--Line-Series-6: ;
+--Line-Series-7: ;
+--Line-Series-8: ;
+--Line-Series-9: ;
+--Line-Series-10: ;
+--Line-Series-11: ;
+
+*/
+
+}

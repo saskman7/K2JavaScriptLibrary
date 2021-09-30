@@ -1,0 +1,38 @@
+/* Tree View Control */
+
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-ControlPack-TreeView {
+    border: 0;
+    border-radius: 3px;
+    padding-top: 16px;
+    padding-right: 15px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    box-shadow: 0 0 0 1px var(--Input-Border-Color);
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    width: calc(100% - 2px);
+    font-family: var(--Main-Font-Family);
+}
+
+.sbm4k2 .theme-entry .SFC .SourceCode-Forms-Controls-Web-ControlPack-TreeView .stylewrapper {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .node .content span {
+    white-space: nowrap;
+}
+
+.theme-entry .sbm4k2 .SourceCode-Forms-Controls-Web-ControlPack-TreeView div.header {
+    box-shadow: none;
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry li.node.selectable.empty.populated, 
+.sbm4k2 .theme-entry li.node.selectable.collapsed.populated {
+    height: 2.5rem;
+}
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-TreeView .tree-body>.node-container {
+    overflow:visible;
+}
+/* END: Tree View Control */

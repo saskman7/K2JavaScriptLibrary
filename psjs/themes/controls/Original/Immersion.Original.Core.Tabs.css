@@ -1,0 +1,104 @@
+.sbm4k2 .theme-entry .tab-box .tab-box-body {
+    background-color: var(--Form-Background-Color);
+    margin-top: 25px;
+}
+
+.sbm4k2 .tab-box.tabs-top {
+    margin-top: -20px;
+}
+
+.sbm4k2 .theme-entry .tab-box.tabs-top ul.tab-box-tabs {
+    white-space: nowrap;
+    display: table;
+    table-layout: fixed;
+    border-bottom: var(--Menu-Item-Highlight-Background-Color) 0.1em solid;
+    border-top: var(--Menu-Item-Highlight-Background-Color) 0.1em solid;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li {
+    display: table-cell;
+    text-align: center;
+    height: 100%;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li a.tab,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper {
+    display: flex;
+    min-height: 30px;
+    padding: 0px;
+    /* vertical-align: bottom; */
+    justify-content: center;
+    align-items: center;
+}
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li a.tab {
+    border-right: var(--Menu-Item-Highlight-Background-Color) 0.15em solid;
+    background-color: var(--Button-Disabled-Background-Color);
+}
+
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li a.tab .tab-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-wrapper {
+    background-color: var(--Form-Background-Color);
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover {
+    background-color: var(--Tab-Border-Color);
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab:hover .tab-wrapper {
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-wrapper {
+    background-color: var(--Menu-Item-Highlight-Background-Color);
+    cursor: default;
+    border-bottom: 2px var(--Menu-Item-Highlight-Background-Color) solid;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper {
+    border: none;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab span.tab-text {
+    width: 100%;
+    height: auto;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li a.tab, 
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li a.tab.selected {
+    height: 30px; /*To fix 1 px white css scaling issue with tabs*/
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab .tab-text {
+    color: var(--Tab-Text-Color);
+    font-weight: 600;
+    font-family: var(--Main-Font-Family-2);
+    font-size: 1.3rem;
+    opacity: 1;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected .tab-text {
+    opacity: 1;
+    color: var(--Tab-Hover-Text-Color);
+    cursor: default;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-text {
+    color: var(--Tab-Hover-Text-Color);
+    cursor: default;
+}

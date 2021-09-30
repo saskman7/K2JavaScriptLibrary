@@ -1,0 +1,97 @@
+:root {
+
+    /* common */
+    --body-color: rgb(78, 87, 88);
+    --body-background-color: #fff0;
+    --body-font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --paragraph-font-family: Helvetica,Arial,sans-serif;
+        --selected-color: var(--Primary);
+        --selected-text-color: var(--On-Primary);
+        --focused-color: var(--On-Primary-Dark);
+        --active-color: white;
+        --hover-color: var(--Secondary);
+        --readonly-color: #f1f0f0;
+         --disabled-color: #f1f0f0;
+    --invalid-border-color: var(--Error);
+      --header-presense-background-color: var(--On-Primary);
+    --header-presense-color: var(--Primary);
+     /* inputs and labels */
+    --Label-Text-Size: 1.3rem;
+    --data-label-text-size: 1.5rem;
+    --data-label-background-color: #f5f5f5;
+    --input-text-color: rgba(78, 87, 88, 1);
+    --input-text-background-color: transparent;
+    --input-background-color: transparent;
+    --input-text-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    --input-border-color: var(--Primary);
+    --input-border: 3px !important;
+    --watermark-color: var(--Primary);
+    --watermark-font-family: sans-serif;
+    /* headings */
+    --h1-color: var(--On-Primary);
+    --h1-font-family: "Raleway",Helvetica,Arial,sans-serif;
+    --h1-font-style: bold;
+    --h1-label-color: var(--Primary);
+    --h1-label-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    --h2-color: var(--On-Primary);
+    --h2-font-family: Helvetica,Arial,sans-serif;
+    --h2-label-color: var(--Primary-Dark);
+    --h3-label-font-family: Helvetica,Arial,sans-serif;
+    --h3-label-color:  var(--Primary);
+    --h2-label-font-family: Helvetica,Arial,sans-serif;
+    --h4-color: var(--Primary-Dark);
+    --h4-font-family: Helvetica,Arial,sans-serif;
+    /* header */
+    --header-background-color: var(--Primary);
+    --fixed-header-background-color: var(--Primary);
+    --list-view-header-background-color: var(--Primary-Dark);
+	--list-view-header-font-color: var(--On-Primary-Dark);
+    /* grids */
+    --grid-border-color: var(--Primary-Light);
+    --grid-header-color: var(--Primary);
+    --grid-header-font-family: Helvetica,Arial,sans-serif;;
+    --grid-column-header-background-color: var(--Primary-Light);
+    --grid-column-header-text-color: var(--On-Primary-Light);
+    --grid-column-header-font-family: Helvetica,Arial,sans-serif;;
+    --grid-row-alternate-background-color: var(--Primary-Very-Light);
+    --grid-row-hover-background-color: var(--Secondary);
+    --grid-row-hover-text-color: var(--On-Secondary);
+    --grid-row-alternate-text-color: var(--Primary-Dark);
+    --grid-row-selected-background-color: var(--Secondary);
+    --grid-row-selected-text-color: var(--On-Secondary);
+    --filter-background-color: var(--Primary-Very-Light);
+    --filter-border-color: var(--On-Primary-Light);
+        /* tabs */
+    --tabs-background-color: var(--Secondary);
+    --tab-color: var(--Surface);
+    --tab-border: var(--Secondary);
+    --tab-background-color: var(--On-Surface);
+    --tab-font-family: Helvetica,Arial,sans-serif;;
+    --tab-selected-color: var(--On-Secondary-Dark);
+     --tab-hover-background-color: var(--On-Secondary-Dark);
+    --tab-selected-background-color: var(--Secondary);
+    --tab-text-color: var(--On-Primary-Dark);
+    --tab-selected-text-color: var(--Primary-Dark);
+        /* buttons */
+    --button-background-color: var(--Secondary-Dark);
+    --button-border-color: var(--Secondary-Dark);
+    --button-text-color: var(--On-Secondary-Dark);
+    --button-font-family: Helvetica,Arial,sans-serif;;
+    --button-focus-background-color: var(--Secondary);
+    --button-focus-border-color: var(--Secondary);
+    --button-active-background-color: var(--Secondary-Light);
+    --button-active-border-color: var(--Secondary-Light);
+    --button-hover-background-color: var(--Secondary-Light);
+    --button-hover-text-color: var(--On-Secondary-Light);
+    --button-hover-border-color: var(--On-Secondary-Light);
+    /* Application toolbar */
+    --applicationtoolbar-button-background-color: var(--Secondary);
+    --applicationtoolbar-button-icon-background-color: var(--Secondary-Light);
+    --applicationtoolbar-button-text-color: var(--On-Secondary);
+    /* Pager */
+    --pager-progress-bar-background-color: var(--On-Primary-Light:);
+    --pager-progress-bar-foreground-color: var(--Primary-Light);
+      /*toggle replace check box*/
+    --selected-toggle-color: var(--Primary);
+    }
+  

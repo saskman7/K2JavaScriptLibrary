@@ -1,0 +1,6 @@
+body {
+    /* some sample styles */
+}
+.theme-entry .dialog.no-buttons .popup-body {
+    background-color: var(--Form-Background-Color);
+}

@@ -1,0 +1,212 @@
+/* replace checkboxes with toggles */
+
+
+/* TODO: Fix style for grid and worklist checkboxes before re-enabling */
+
+.sbm4k2 .theme-entry label.input-control.checkbox.focus {
+    outline: none;
+}
+
+.sbm4k2 .theme-entry .checkbox-outer-panel {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 8rem;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.sbm4k2 .theme-entry label.input-control.checkbox.read-only .input-control-img {
+    background-color: var(--Button-Text-Color);
+    border-color: var(--Input-Disabled-Border-Color);
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked.read-only .input-control-img{
+    background-color: var(--Input-Disabled-Text-Color);
+    border-color: var(--Input-Disabled-Border-Color);
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.read-only .input-control-img:before {
+    background-color: var(--Input-Disabled-Text-Color);
+}
+.sbm4k2 .theme-entry label.input-control.checkbox.checked.read-only .input-control-img:before {
+    background-color: var(--Button-Text-Color);
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-img {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: none;
+    border-radius: 15px;
+    border: var(--Button-Background-Color) solid 1px;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked:hover .input-control-img {
+    background-image: none;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.focus .input-control-img {
+    background-image: none;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-img:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 3px;
+    bottom: 2px;
+    background-color: var(--Button-Background-Color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img:before {
+    background-color: var(--Button-Text-Color);
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img {
+    background-color: var(--Button-Focus-Background-Color);
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.focus .input-control-img {
+    box-shadow: 0 0 1px var(--Button-Focus-Background-Color);
+}
+
+/*Adjust for single toggle with text 5-29-2020 Bre*/
+
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-text {
+    padding-left: 7rem;
+}
+
+/*toggle stack containers*/
+
+.sbm4k2 .theme-entry .stack-container {
+    justify-content: left;
+    padding-left: 0px;
+}
+
+.sbm4k2 .theme-entry .stack-container .stack {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 2;
+    flex-direction: column;
+}
+
+/*General lists and stacked containers with toggles*/
+
+.sbm4k2 .theme-entry .stack-container .stack div.multi-select-box-list-item label.input-control.checkbox,
+.sbm4k2 .theme-entry .stackContainer .stack div.choice-control-item-row label.input-control.checkbox {
+height: 34px;
+width: 63px;
+display: flex;
+align-items: center;
+}
+
+.sbm4k2 .stack-container .stack div.multi-select-box-list-item label.input-control.checkbox .input-control-text,
+.sbm4k2 .stackContainer .stack div.choice-control-item-row label.input-control.checkbox .input-control-text {
+    padding-left: 7rem;
+    overflow: visible;
+    }
+
+.sbm4k2 .theme-entry .SourceCode-Forms-Controls-Web-ControlPack-Choice .input-control.checkbox span.input-control-text {
+    margin-left: 0px;
+}
+
+
+/*
+
+
+.sbm4k2 .theme-entry label.input-control.checkbox.focus not(WorkListItemTable) {
+    outline: none;
+}
+
+.sbm4k2 .theme-entry .checkbox-outer-panel:not(.WorkListItemTable) {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox:not(.WorkListItemTable) {
+    width: 100%;
+    height: 100%;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox:not(.WorklistItemCheckbox .AllWorklistCheckBoxes .input-control) .input-control-img {
+    position: absolute;
+    cursor: pointer;
+    top: 0 left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: none;
+    border-radius: 15px;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked:hover .input-control-img:not(.WorkListItemTable) {
+    background-image: none;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.focus .input-control-img:not(.WorkListItemTable) {
+    background-image: none;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox .input-control-img:before:not(.WorkListItemTable) {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 3px;
+    bottom: 3.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img:before:not(.WorkListItemTable) {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.checked .input-control-img:not(.WorkListItemTable) {
+    background-color: #288797;
+}
+
+.sbm4k2 .theme-entry label.input-control.checkbox.focus .input-control-img:not(.WorkListItemTable) {
+    box-shadow: 0 0 1px #2196F3;
+}
+*/
+
+
+/* END: replace checkboxes with toggles */

@@ -1,0 +1,182 @@
+/* page style */
+
+body.sbm4k2 {
+    color: var(--Main-Text-Color);
+    background-color: var(--Form-Background-Color);
+    height: 100vh;
+}
+
+.sbm4k2 .theme-entry .form {
+    padding: 0px;
+    background-color: transparent;
+}
+
+.sbm4k2 .theme-entry div {
+    font-family: var(--Main-Font-Family);
+}
+
+.sbm4k2 .runtime-content {
+    align-content: center !important;
+}
+
+.sbm4k2 .theme-entry.runtime-form {
+    max-width: 1800px;
+    margin-top: 30px;
+    min-width: 300px;
+}
+
+/* standard text, borders, etc */
+
+.sbm4k2 * {
+    box-sizing: border-box;
+    font-family: var(--Main-Font-Family);
+}
+
+.sbm4k2 span,
+.sbm4k2.theme-entry span,
+.sbm4k2.theme-entry input[type=text] {
+    background-color: var(--Input-Background-Color);
+    font-family: var(--Main-Font-Family);
+    font-size: var(--Main-Text-Size);
+    color: var(--Input-Text-Color);
+    /* 7-29-2020 */
+    /*white-space: pre-wrap;*/
+}
+
+.sbm4k2 .theme-entry .input-control .input-control-m-c,
+.sbm4k2 .theme-entry .input-control.select-box .input-control-buttons {
+    border: none;
+}
+
+.sbm4k2 .theme-entry .formcontrol span {
+    font-size: 1.2rem;
+}
+
+.theme-entry .sbm4k2 h1.page-title,
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-DataLabel {
+    font-family: var(--SB-Title-Font, var(--Main-Font-Family));
+    font-weight: bolder;
+    font-size: var(--SB-Title-Size, 2.3rem);
+    padding-bottom: 15px;
+}
+.theme-entry .sbm4k2 h1.page-title {
+    color: var(--SB-Title-Color, var(--Label-Text-Color-2));
+}
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h1.page-title.SourceCode-Forms-Controls-Web-DataLabel {
+    color: var(--SB-Title-Color, var(--Label-Text-Color-2));
+}
+
+.theme-entry .sbm4k2 h2.page-subtitle,
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-DataLabel {
+    font-family: var(--SB-Subtitle-Font, var(--Main-Font-Family-2));
+    font-weight: normal;
+    font-size: var(--SB-Subtitle-Size, 1.7rem);
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+.theme-entry .sbm4k2 h2.page-subtitle {
+    color: var(--SB-Subtitle-Color, var(--Label-Text-Color-1));
+}
+
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-Label,
+.sbm4k2 .theme-entry .SFC h2.page-subtitle.SourceCode-Forms-Controls-Web-DataLabel {
+    color: var(--SB-Subtitle-Color, var(--Label-Text-Color-1));
+}
+
+.sbm4k2 .theme-entry h1,
+.sbm4k2 .theme-entry h2,
+.sbm4k2 .theme-entry h3,
+.sbm4k2 .theme-entry h4 {
+    opacity: 1.0;
+    transition: opacity 1.0s ease-in-out;
+    transition-delay: 1.5s;
+}
+
+.sbm4k2 .theme-entry h1,
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text,
+.sbm4k2.theme-entry .panel-header-wrapper .panel-header-text {
+    font-family: var(--SB-H1-Font, var(--Main-Font-Family-2));
+    font-weight: bolder;
+    font-size: var(--SB-H1-Size, 1.8rem);
+    color: var(--SB-H1-Color, var(--Input-Text-Color));
+}
+
+.sbm4k2.theme-entry .grid-header-wrapper .grid-header-text {
+    color: var(--Label-Text-Color-1);
+}
+.sbm4k2 .theme-entry .panel-header-wrapper .panel-header-text {
+    color: var(--Input-Text-Color);
+}
+
+.sbm4k2 .theme-entry h2 {
+    font-family: var(--SB-H2-Font, var(--Main-Font-Family));
+    font-weight: normal;
+    font-size: var(--SB-H2-Size, 1.7rem);
+    color: var(--SB-H2-Color, var(--Label-Text-Color-2));
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.sbm4k2 .theme-entry h3 {
+    font-family: var(--SB-H3-Font, var(--Main-Font-Family-2));
+    font-weight: normal;
+    font-size: var(--SB-H3-Size, 1.35rem);
+    color: var(--SB-H3-Color, var(--Label-Text-Color-2));
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.sbm4k2 .theme-entry h4 {
+    font-weight: normal;
+    font-family: var(--Main-Font-Family);
+    font-size: var(--SB-H4-Size, var(--data-label-text-size));
+    color: var(--SB-H4-Color, var(--Label-Text-Color-3));
+    padding-top: 12px;
+}
+.sbm4k2 .theme-entry p {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--SB-Paragraph-Font, var(--Main-Text-Size));
+}
+.sbm4k2 .theme-entry .SFC h1.SourceCode-Forms-Controls-Web-DataLabel,
+.sbm4k2 .theme-entry .SFC h2.SourceCode-Forms-Controls-Web-DataLabel,
+.sbm4k2 .theme-entry .SFC h3.SourceCode-Forms-Controls-Web-DataLabel,
+.sbm4k2 .theme-entry .SFC h4.SourceCode-Forms-Controls-Web-DataLabel {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding-left: 0px;
+}
+
+
+
+/*Message Box*/
+
+.sbm4k2.theme-entry .panel-header-wrapper {
+    border-bottom: none;
+}
+.sbm4k2.theme-entry .dialog .popup-footer .popup-footer-c {
+    top: -10px;
+}
+
+/* END: replace true / false on grid columns with icons */
+
+/* Table Debug fixes */
+
+/*Remove scroll bars*/
+
+
+@media screen and (max-width: 640px) {
+    .sbm4k2 .runtime-content .panel table[name="Table Debug"] {
+        display: none!important;
+    }
+}
+
+/*Enable LAter*/
+
+.sbm4k2 .theme-entry .scroll-wrapper {
+    overflow: visible;
+}

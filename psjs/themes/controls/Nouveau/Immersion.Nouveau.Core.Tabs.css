@@ -1,0 +1,57 @@
+/* tabs */
+
+.sbm4k2 .theme-entry.runtime-form>.tab-box {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sbm4k2  .theme-entry.runtime-form>.tab-box .tab-box-body-m {
+    margin: 0px;
+    /*overrride some negative margin in SF*/
+}
+
+.sbm4k2 .theme-entry.runtime-form>.tab-box ul.tab-box-tabs {
+    display: inline-block;
+    background-color: var(--Tab-Background-Color);
+    padding: 7px;
+    border-radius: 100px;
+}
+
+.sbm4k2 .theme-entry.runtime-form>.tab-box ul.tab-box-tabs li a.tab {
+    border-radius: 100px;
+    overflow: hidden;
+    text-transform: UPPERCASE;
+}
+
+.sbm4k2   .theme-entry.runtime-form>.tab-box .tab-box-body {
+    text-align: left;
+}
+
+.sbm4k2 .theme-entry.runtime-form>.tab-box ul.tab-box-tabs a.tab .tab-text {
+    color: var(--Tab-Text-Color);
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.sbm4k2  .theme-entry.runtime-form>.tab-box ul.tab-box-tabs a.tab.selected .tab-text {
+    color: var(--Tab-Text-Selected-Color);
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.selected.tab .tab-wrapper,
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs a.tab.selected:hover .tab-wrapper {
+    border-bottom: 0px;
+    margin: 0px;
+}
+
+.sbm4k2 .theme-entry .tab-box ul.tab-box-tabs li {
+    height: auto;
+}
+
+.sbm4k2 .theme-entry .tab-box .tab-box-body {
+background-color: transparent;
+margin-top: 25px;
+margin-bottom: 15px;
+margin-left:  100px;
+margin-right: 100px;
+}

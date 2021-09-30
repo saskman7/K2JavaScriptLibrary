@@ -1,0 +1,814 @@
+/* #region TOAST */
+    .scpsapi-toast-container {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        overflow: hidden;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        z-index: 5000;
+    }
+    
+    .scpsapi-toast-container-right,
+    .scpsapi-toast-container-left {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        overflow: visible;
+        display: block;
+        padding: 20px;
+    }
+    
+    .scpsapi-toast-container-right {
+        right: 0px;
+        left: auto;
+    }
+    
+    .scpsapi-toast-container-left {
+        right: auto;
+        left: 0px;
+    }
+    
+    .scpsapi-toast-item {
+        display: block;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: all;
+        position: relative;
+        align-self: flex-end;
+        opacity: 1.0;
+        transform: translateX(0%);
+        margin-bottom: 20px;
+        transition: height 0.25s ease-out, opacity 0.25s linear;
+    }
+    
+    .scpsapi-toast-item.hidden {
+        height: 0px;
+        opacity: 0.0;
+    }
+    
+    .scpsapi-toast-item.autohide {
+        height: 0px !important;
+        opacity: 0;
+        transform: translateX(100%);
+        margin-bottom: 0px;
+        transition: height 0.25s ease-in 0.25s, opacity 0.25s linear, transform 0.25s ease-in, margin-bottom 0.25s ease-in 0.25s;
+    }
+    
+    .scpsapi-toast-item .scpsapi-toast-item-inner {
+        position: absolute;
+        bottom: 0px;
+        top: auto;
+        right: 0px;
+    }
+    
+    .scpsapi-toast-item.autohide .scpsapi-toast-item-inner {
+        bottom: auto;
+        top: 0px;
+    }
+
+
+/* #region RESPONSIVE TABLES */
+    @media only screen and (max-width: 450px) {
+        .SourceCode-Forms-Controls-Web-Table[name~='responsive'] {
+            display: flex!important;
+            flex-direction: column;
+        }
+        .SourceCode-Forms-Controls-Web-Table[name~='responsive']>.editor-cell {
+            padding-left: 0px!important;
+            padding-right: 0px!important;
+        }
+    }
+
+
+/* #region 100% HEIGHT CONTROLS */
+    /*views at 100% height*/
+    [name~='100h'],
+    [name~='100h']>.panel-body,
+    [name~='100h']>.panel-body>.panel-body-m,
+    [name~='100h']>.panel-body>.panel-body-m>.panel-body-m-c,
+    [name~='100h']>.panel-body>.panel-body-m>.panel-body-m-c>.panel-body-wrapper,
+    [name~='100h']>.panel-body>.panel-body-m>.panel-body-m-c>.panel-body-wrapper>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        height: 100%;
+    }
+    
+    [name~='100h']>.panel-body>.panel-body-m>.panel-body-m-c>.panel-body-wrapper>div>.SourceCode-Forms-Controls-Web-Table {
+        height: 100%;
+    }
+    
+    [name~='100h']>.panel-body {
+        border: none !important;
+        padding: 0px !important;
+    }
+
+    /*controls at 100% height*/
+    [name~='100h'] {
+        height: 100% !important;
+    }
+    
+    [name~='100abs'] {
+        height: auto !important;
+        position: absolute !important;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: auto !important;
+        /*one of these is a table*/
+    }
+
+    /*Content control is weird, we will force it here!*/
+    .SourceCode-Forms-Controls-Web-Content-Content[name~='100abs'] iframe {
+        height: 100% !important;
+        position: absolute !important;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100% !important;
+    }
+    
+    .SourceCode-Forms-Controls-Web-Content-Content[name~='100h'] iframe {
+        height: 100%!important;
+    }
+
+
+/* #region GENERIC ANIMATIONS */
+    /*List Box*/
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"] {
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    /*workaround for listbox height bug when using smo datasource*/
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"] .stylewrapper,
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"] .listwrapper {
+        height: auto !important;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"] .optionwrapper {
+        position: relative !important;
+        overflow: visible !important;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"]>.stylewrapper {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        border: none !important;
+        background-color: transparent !important;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"] {
+        box-shadow: none !important;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(1) {
+        transition-delay: 0.0s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(3) {
+        transition-delay: 0.4s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(4) {
+        transition-delay: 0.6s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(5) {
+        transition-delay: 0.8s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(6) {
+        transition-delay: 1.0s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(7) {
+        transition-delay: 1.2s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(8) {
+        transition-delay: 1.4s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(9) {
+        transition-delay: 1.6s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option:nth-child(10) {
+        transition-delay: 1.8s;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"] .option {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.25s ease-in-out, opacity 0.25s linear, color 0.15s linear;
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option {
+        opacity: 1.0;
+        transform: translateY(0px);
+    }
+    
+    .SourceCode-Forms-Controls-Web-ControlPack-ListBox[name~="animateinitems"].show .option.complete {
+        transition-delay: 0s;
+    }
+
+
+    /*Generics*/
+    [name~='animatein'] {
+        opacity: 0.0;
+        transform: translateY(100px);
+        transition: opacity 0.5s linear, transform 0.5s ease-out;
+    }
+    
+    [name~='animatein'].show {
+        opacity: 1.0;
+        transform: translateY(0px);
+    }
+
+
+/* #region DOCKING */
+    .scpsapi-full-height-form,
+    .scpsapi-full-height-form>body,
+    .scpsapi-full-height-form>body>form,
+    .scpsapi-full-height-form>body>form>.runtime-content {
+        display: block;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    
+    .scpsapi-full-height-form>body {
+        overscroll-behavior: none;
+    }
+    
+    .runtime-content.scpsapi-form-with-docked-controls .scpsapi-header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    
+    .runtime-content.scpsapi-form-with-docked-controls .scpsapi-footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    
+
+/* #region TYPOGRAPHY RESET */
+    .theme-entry div,
+    .theme-entry span,
+    .theme-entry td,
+    .theme-entry li,
+    .theme-entry p,
+    .theme-entry textarea,
+    .theme-entry input[type=text],
+    .theme-entry input.text,
+    .theme-entry select,
+    .theme-entry option,
+    .theme-entry h1,
+    .theme-entry h2,
+    .theme-entry h3,
+    .theme-entry h4 {
+        color: inherit;
+    }
+    
+    .theme-entry div,
+    .theme-entry span,
+    .theme-entry td,
+    .theme-entry li,
+    .theme-entry p,
+    .theme-entry textarea,
+    .theme-entry input[type=text],
+    .theme-entry input.text,
+    .theme-entry select,
+    .theme-entry option {
+        font-family: inherit;
+        ;
+    }
+    
+    .theme-entry .SourceCode-Forms-Controls-Web-Label,
+    .theme-entry .form-field .form-field-label {
+        font-weight: inherit;
+    }
+    
+
+/* #region LOOP PERCENTAGE */
+    :root {
+        --main-accent-color: #2196f3;
+        --main-accent-color-hover: #64b5f6;
+        /**grey void primary color*/
+        --icon-color: currentColor;
+    }
+    
+    [name~='animatedpie'] {
+        opacity: 0.0;
+    }
+    
+    [name~='animatedpie'].show {
+        opacity: 1.0;
+    }
+    
+    .scpsapi-looppercentage {
+        position: relative;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .scpsapi-looppercentage .middle-text {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        text-align: center!important;
+        left: 0px;
+        right: 0px;
+    }
+    
+    .scpsapi-looppercentage,
+    .scpsapi-looppercentage * {
+        color: inherit !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+    }
+    
+    .scpsapi-looppercentage .point {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .scpsapi-looppercentage .point2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .scpsapi-looppercentage .loop {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .scpsapi-looppercentage .round {
+        transform: rotate(-90deg);
+        transition: all 1s ease-in-out;
+        /* SVG */
+        fill: none;
+        stroke: var(--main-accent-color);
+        stroke-width: 7;
+        stroke-linecap: round;
+        stroke-dasharray: 0 999;
+    }
+    
+    .scpsapi-looppercentage .round2 {
+        transform: rotate(-45deg);
+        transition: all 1s ease-in-out;
+        /* SVG */
+        fill: none;
+        stroke: rgba(0, 0, 0, 0.2);
+        stroke-width: 4;
+        stroke-linecap: butt;
+    }
+    
+    .scpsapi-looppercentage .cls-1 {
+        isolation: isolate;
+        font-size: 40px;
+        font-family: Roboto-Regular, Roboto;
+        font-weight: 500;
+    }
+    
+    .scpsapi-looppercentage .cls-2 {
+        letter-spacing: -0.08em;
+        color: #D3D3D3;
+    }
+    
+    .scpsapi-measureitem {
+        opacity: 0.0;
+        pointer-events: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .scpsapi-scrolling-text-container {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 0.0;
+        transform: translateY(100%);
+    }
+    
+    .scpsapi-scrolling-text-container.show {
+        opacity: 1.0;
+        transform: translateY(0%);
+        transition: opacity linear 1s, transform ease-out 1s;
+    }
+
+
+/* #region VIEWS NO STYLING */
+    [name~='nostyle'] {
+        box-shadow: none!important;
+    }
+    
+    [name~='nostyle']>.panel-body,
+    [name~='nostyle']>.panel-header,
+    [name~='nostyle']>.panel-header div {
+        background-color: transparent!important;
+    }
+    
+    [name~='nostyle']>.panel-header .panel-header-text {
+        padding-left: 0px;
+    }
+    
+    [name~='nostyle']>.panel-header .panel-header-controls {
+        padding-right: 0px;
+    }
+    
+
+/* #region SVG ICON */
+    :root {
+        --main-accent-color: #2196f3;
+        --main-accent-color-hover: #64b5f6;
+        /**grey void primary color*/
+        --icon-color: currentColor;
+    }
+    
+    .scpsapi-svg-icon {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .scpsapi-svg-icon>img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+    }
+    
+    .icon-container {
+        --icon-color: var(--main-accent-color);
+        cursor: hand;
+    }
+    
+    .icon-container:hover {
+        --icon-color: var(--main-accent-color-hover);
+    }
+
+    /*Checkbox styles */
+    .theme-entry label.scpsapi-checkbox {
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .scpsapi-checkbox-outer.checkbox-outer-panel {
+        display: inline-flex;
+    }
+    
+    .scpsapi-checkbox .input-control-img {
+        display: none;
+    }
+    
+    .scpsapi-checkbox.focus {
+        outline-color: transparent!important;
+        /*override*/
+    }
+
+
+/* #region POPOVERS */
+    /*#region Targeted Popover*/
+    .theme-entry .popup-targeted {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    .standard-rounded-popup {
+        background-color: var(--panel-background-color);
+        border-radius: 5px;
+    }
+    
+    .popup-targeted {
+        --panel-background-color: #efefef;
+        --targeted-arrow-color: var(--panel-background-color);
+        --targeted-arrow-width: 30px;
+        --targeted-arrow-height: 15px;
+        box-shadow: none;
+        overflow: visible;
+    }
+    
+    .popup-targeted.popup:not(.intro) {
+        transition: transform 0.25s, opacity 0.25s, left 0.15s, top 0.15s;
+    }
+    
+    .popup-targeted .lyt-popup-targeted {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.arrow-container {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.content {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.top {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.top .popup-targeted-arrow {
+        bottom: 0px;
+        transform: rotate(-180deg);
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.bottom {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.bottom .popup-targeted-arrow {
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.left {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.left .popup-targeted-arrow {
+        right: 0px;
+        transform: rotate(90deg);
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.right {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.right .popup-targeted-arrow {
+        left: 0px;
+        transform: rotate(-90deg);
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.right .popup-targeted-arrow,
+    .popup-targeted .lyt-popup-targeted>.left .popup-targeted-arrow {
+        margin-top: calc((var(--targeted-arrow-height) / 2) * -1);
+        margin-left: calc((var(--targeted-arrow-height) / 2) * -1);
+    }
+    
+    .popup-targeted .lyt-popup-targeted>.top .popup-targeted-arrow,
+    .popup-targeted .lyt-popup-targeted>.bottom .popup-targeted-arrow {
+        /*margin-top: calc((var(--targeted-arrow-width) / 2) * -1);*/
+        /*doesn't work for bottom arrow*/
+        margin-left: calc((var(--targeted-arrow-width) / 2) * -1);
+    }
+    
+    .targetleft.popup-targeted .lyt-popup-targeted>.left {
+        width: var(--targeted-arrow-height);
+    }
+    
+    .targetright.popup-targeted .lyt-popup-targeted>.right {
+        width: var(--targeted-arrow-height);
+    }
+    
+    .targettop.popup-targeted .lyt-popup-targeted>.top {
+        height: var(--targeted-arrow-height);
+    }
+    
+    .targetbottom.popup-targeted .lyt-popup-targeted>.bottom {
+        height: var(--targeted-arrow-height);
+    }
+    
+    .popup-targeted .lyt-popup-targeted .popup-targeted-content {
+        box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .popup-targeted .popup-targeted-arrow {
+        position: absolute;
+        transition: left 0.15s, top 0.15s;
+        width: var(--targeted-arrow-width);
+        height: var(--targeted-arrow-height);
+    }
+    
+    .popup-targeted .popup-targeted-arrow polygon {
+        background-color: #efefef;
+        fill: var(--targeted-arrow-color)!important;
+    }
+    /*#endregion Targeted Popover*/
+    
+    /*#region SCPSAPI additions for popover*/
+    .scpsapi-popover {
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .scpsapi-popover-content {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--targeted-arrow-color, #efefef);
+    }
+    
+    .scpsapi-popover--iframe {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    .scpsapi-popover--iframe.show {
+        opacity: 1;
+        pointer-events: all;
+        transition: opacity 0.25s linear;
+    }
+    
+    .scpsapi-popover--loading-screen {
+        opacity: 1;
+        pointer-events: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .scpsapi-popover--loading-screen.hide {
+        opacity: 0;
+        transition: opacity 0.25s linear;
+    }
+    
+    .scpsapi-popover--loadingicon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 5px;
+        background-size: cover!important;
+        background-repeat: no-repeat;
+        position: relative!important;
+    }
+    /*#endregion SCPSAPI additions for popover*/
+
+
+/* #region NO HEADER */
+    [name~="noheaders"].grid .grid-toolbars,
+    [name~="noheaders"].grid .grid-column-headers {
+        display: none!important;
+    }
+
+/* #region FANCY LISTS */
+    [name~='fancylist'].grid .grid-body-content tbody {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    [name~='fancylist-vertical'].grid .grid-body-content tbody {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    @media only screen and (max-width: 450px) {
+        [name~='fancylist'].grid .grid-body-content tbody {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        [name~='fancylist'].grid .grid-body-content span.runtime-list-item>* {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    
+    [name~='fancylist'].grid .grid-body-content tbody>tr {
+        display: block;
+    }
+    
+    [name~='fancylist'].grid .grid-body-content tbody>tr>td {
+        display: block;
+    }
+    
+    [name~='fancylist'].grid .grid-body-content .grid-content-cell {
+        display: block;
+    }
+    
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td {
+        background-color: transparent;
+    }
+    
+    [name~='fancylist'].grid .grid-body-content .grid-content-cell,
+    [name~='fancylist'].grid span.runtime-list-item {
+        overflow: visible;
+        white-space: initial;
+    }
+    
+    .theme-entry [name~='fancylist'].grid span.runtime-list-item-wrap,
+    .theme-entry [name~='fancylist'].grid span.runtime-list-item {
+        padding: 0px;
+        /*override SF*/
+    }
+    
+    [name~='fancylist'].grid .grid-content-table tbody tr>td {
+        border: 0px;
+    }
+    
+    .theme-entry [name~='fancylist'].grid .grid-body,
+    .theme-entry [name~='fancylist'].grid .grid-body-content-wrapper,
+    .theme-entry [name~='fancylist'].grid .grid-body-content-wrapper>.scroll-wrapper {
+        overflow: visible!important;
+    }
+    
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td span,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td span,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td span,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td span,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td h1,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td h1,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td h1,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td h1,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td h2,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td h2,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td h2,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td h2,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td h3,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td h3,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td h3,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td h3,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td h4,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td h4,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td h4,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td h4,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td label,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td label,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td label,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td label,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td p,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td p,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td p,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td p,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td div.grid-content-cell-wrapper,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td div.grid-content-cell-wrapper,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td div.grid-content-cell-wrapper,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td div.grid-content-cell-wrapper {
+        color: inherit;
+    }
+    
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr.selected>td,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr.selected:not(.action-row)>td {
+        /*override sf*/
+        background-color: transparent;
+    }
+    
+    .theme-entry [name~='fancylist'].grid table.grid-content-table tr:hover>td,
+    .theme-entry [name~='fancylist'].grid table.grid-content-table.zebra-stripes tr:not(.action-row):hover>td {
+        /*override sf*/
+        background-color: transparent;
+    }
+    
+    .theme-entry [name~='fancylist'].grid .grid-content-table tbody tr.highlighted td.first,
+    .theme-entry [name~='fancylist'].grid .grid-content-table tbody tr.highlighted td.last {
+        border-width: 0px;
+    }
+    
+    [data-template-background-image-source] {
+        display: none;
+    }
